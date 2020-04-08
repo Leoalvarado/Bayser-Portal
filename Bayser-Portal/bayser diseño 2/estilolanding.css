@@ -11,6 +11,7 @@ section#banner{
 	background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    prueba;
 }
 */
 
@@ -19,7 +20,7 @@ body{
     padding:  0;
     background: white;
     font-family: Arial, Helvetica, sans-serif;
-    
+    padding: 0%;
     }
 
 header{
