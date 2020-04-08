@@ -17,6 +17,7 @@ $(document).ready(function(){
 		}else{
 			if(flag){
 				$("nav").css({"background-color": "transparent"});
+				$("header nav ul li a").css({"color": "#33333"});
 				flag = false;
 			}
 		}
