@@ -62,8 +62,9 @@ header nav ul li a{
     padding: 20px 15px;
     text-decoration: none;
     text-align: center;
-    /*color: #333333;*/
-    color: whitesmoke;
+    color: #333333;
+    /*color: whitesmoke;*/
+    /* color: black; */
     transition: all 0.4s linear;
     border-radius: 3.5px;
     font-family: 'Baloo Thambi 2', cursive;
@@ -88,7 +89,8 @@ img#logo{
     width: 50px;
     left: 15px;
     
-        }
+}
+
     .logo .imgnav{
            
            float: left;
