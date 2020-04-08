@@ -21,9 +21,13 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     
     }
-header{
 
-    background-image: url(img/mainbayser2.jpg);
+header{
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+header{
+    background-image: url(img/mainbayser5.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -41,8 +45,7 @@ nav{
      position: fixed;
      margin: 0;
      height: auto;
-     padding:  0;
-    
+     padding:  0;   
 }
 
 header nav ul{
@@ -64,12 +67,15 @@ header nav ul li a{
     padding: 20px 15px;
     text-decoration: none;
     text-align: center;
-    /*color: #333333;*/
-    color: whitesmoke;
+    color: #333333;
+    /*color: whitesmoke;*/
+    /* color: black; */
     transition: all 0.4s linear;
     border-radius: 3.5px;
     font-family: 'Baloo Thambi 2', cursive;
 }
+
+
 /*
 img#logo{
 	float:left;
@@ -83,7 +89,6 @@ img#logo{
 #body{
 	width: 100%;
 	height: 200px;
-
 }
 /*Icono de la empresa*/
 .logo{
@@ -91,7 +96,8 @@ img#logo{
     width: 50px;
     left: 15px;
     
-        }
+}
+
     .logo .imgnav{
            
            float: left;
