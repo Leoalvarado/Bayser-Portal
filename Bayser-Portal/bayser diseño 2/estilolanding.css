@@ -11,7 +11,7 @@ section#banner{
 	background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    prueba;
+  
 }
 */
 
@@ -20,108 +20,10 @@ body{
     padding:  0;
     background: white;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 0%;
-
-    
-    }
-  
-.boton_p{
-    position: relative;
-    right: 10px;
-    top: 400px;
-    margin: 0;
-    padding: 0;
     display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    /* min-height: 100vh; */
-    /* background: #031321; */
-    font-family: consolas;
-    z-index: 3;
-    
-}    
-/*Este es el rectangulo del boton*/
-.boton{
-    position: relative;
-    display: inline-block;
-    padding: 15px 30px;
-    color: #2196f3;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    text-decoration: none;
-    font-size: 24px;
-    overflow: hidden;
-    transition: 0.2s;
-    background-color: rgba(20, 19, 19, 0.68);
-    z-index: 3;
-}
-
-/* .boton:hover{
-    color:#255784;
-    background: #2196f3;
-    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
-    transition-delay: 0.1s;
-} */
-
-.boton span{
-    position: absolute;
-    display: block;
-}
-
-a span:nth-child(1){
-    top:0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg,transparent,#2196f3);
-}
-
-a:hover span:nth-child(1){
-    left: 100px;
-    transition: 1s;
-}
-
-a span:nth-child(3){
-    bottom:0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg,transparent,#2196f3);
-}
-
-a:hover span:nth-child(3){
-    right: 100px;
-    transition: 1s;
-    transition-delay: 0.5s;
-}
-
-a span:nth-child(2){
-    top:-100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg,transparent,#2196f3);
-}
-
-a:hover span:nth-child(2){
-    top: 100%;
-    transition: 1s;
-    transition-delay: 0.25s;
-}
-
-a span:nth-child(4){
-    bottom:-100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg,transparent,#2196f3);
-}
-
-a:hover span:nth-child(4){
-    bottom: 100%;
-    transition: 1s;
-    transition-delay: 0.75s;
-}
+    min-height: 100vh;
+    flex-wrap: wrap;
+    }
 
 header{
     font-family: Arial, Helvetica, sans-serif;   
@@ -172,30 +74,10 @@ header nav ul li a{
     /*color: whitesmoke;*/
     /* color: black; */
     transition: all 0.4s linear;
+    border-radius: 3.5px;
     font-family: 'Baloo Thambi 2', cursive;
-    position: relative;
-    background: darkgreen(#2196f3,15);
-    text-transform: uppercase;
 }
 
-header nav ul li a::before{
-    content: "";
-    display: block;
-    width: 0;
-    height: 3px;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    background: #2196f3;
-    transition: .3s;
-}
-
-header nav ul li a:hover::before{
-    width: 100%;
-    left: 0;
-    border: none;
-    border-left: 3px solid #2196f3;
-}
 
 /*
 img#logo{
@@ -209,7 +91,7 @@ img#logo{
 */
 #body{
 	width: 100%;
-	height: 0px;
+	height: 200px;
 }
 /*Icono de la empresa*/
 .logo{
@@ -224,14 +106,15 @@ img#logo{
            float: left;
             width:100px;
             height: 100%;
-            top: -15px;
+            top: -10px;
     } 
 
 
 
 
 /*footer*/
-footer{
+
+/*footer{
     width: 100%;
     background: #202020;
     color: white;   
@@ -356,4 +239,5 @@ footer{
     .colum3{
         margin-top: 40px;
     }
-}
+}*/
+
