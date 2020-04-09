@@ -37,7 +37,7 @@ body{
     /* min-height: 100vh; */
     /* background: #031321; */
     font-family: consolas;
-    z-index: 10;
+    z-index: 3;
     
 }    
 /*Este es el rectangulo del boton*/
@@ -53,7 +53,7 @@ body{
     overflow: hidden;
     transition: 0.2s;
     background-color: rgba(20, 19, 19, 0.68);
-    z-index: 10;
+    z-index: 4;
 }
 
 /* .boton:hover{
@@ -143,7 +143,8 @@ nav{
      margin: -px;
      margin-bottom: 20px;
      height: auto;
-     padding:  0;   
+     padding:  0;
+     z-index: 10;   
 }
 
 header nav ul{
