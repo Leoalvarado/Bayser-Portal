@@ -169,10 +169,29 @@ header nav ul li a{
     /*color: whitesmoke;*/
     /* color: black; */
     transition: all 0.4s linear;
-    border-radius: 3.5px;
     font-family: 'Baloo Thambi 2', cursive;
+    position: relative;
+    background: darkgreen(#2196f3,15);
 }
 
+header nav ul li a::before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    background: #2196f3;
+    transition: .3s;
+}
+
+header nav ul li a:hover::before{
+    width: 100%;
+    left: 0;
+    border: none;
+    border-left: 3px solid #2196f3;
+}
 
 /*
 img#logo{
