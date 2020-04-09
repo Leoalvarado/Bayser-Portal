@@ -195,20 +195,24 @@ header nav ul li a:hover::before{
     border-left: 3px solid #2196f3;
 }
 
-ul li ul li a{
+ul li ul li {
 
-
-}
-
-ul li ul{
+    float: left;
+    }
     
-    display: none;
-    position: relative;
-}
-li:hover>ul{
-    display: block;
-
-}
+    
+    
+    ul li ul{
+        display: none;
+        position: relative;
+        width: 200px;
+        padding: 10px 15px;
+    
+    }
+    li:hover>ul{
+        display: block;
+    
+    }
 
 
 /*
