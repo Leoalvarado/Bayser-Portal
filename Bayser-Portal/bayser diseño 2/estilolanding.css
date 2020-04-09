@@ -248,17 +248,16 @@ img#logo{
 
 }
 
-/*Footer Nando*/
-footer {
+/*Footer Nando*/footer {
     align-self: flex-end;
-    background-color: #171616c9;
+    background-color: #333333;
     color: #fff;
     font-size: 50px;
     font-weight: bold;
     text-align: center;
     padding: 1em;
     width: 100%;
-  
+
   }
 .mail {
     list-style: none;
@@ -292,11 +291,14 @@ footer {
 }
 .icon-whatsapp{
     position: relative;
-    font-size: 15px;
+    font-size: 10px;
     
     
 }
 
+.icom-home3{
+   
+}
 
 .mensaje{
 position: relative;
@@ -327,9 +329,8 @@ left: center;
 footer  hr{
      position: relative;
      top: -20px;
-
     }
-    
+
 
 /*FOOTER PEY*/
 /*
