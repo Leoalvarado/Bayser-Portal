@@ -231,6 +231,11 @@ img#logo{
 
 .lemacaja{
 
+    position: relative;
+    right: 10px;
+    top: 450px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     box-shadow: rgba(20, 19, 19, 0.68);
     background-color: transparent;
