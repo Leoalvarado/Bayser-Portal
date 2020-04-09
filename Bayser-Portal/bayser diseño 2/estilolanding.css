@@ -231,7 +231,7 @@ img#logo{
 
 
 
-/* fOOTER NANDO
+
 footer {
     align-self: flex-end;
     background-color: #333333;
@@ -312,8 +312,11 @@ footer  hr{
      top: -20px;
 
     }
-    */
-    /*FOOTER PEY*/
+    
+
+/*FOOTER PEY*/
+/*
+    
 footer{
 
     width: 100%;
@@ -441,3 +444,4 @@ footer{
         margin-top: 40px;
     }
 }
+*/
