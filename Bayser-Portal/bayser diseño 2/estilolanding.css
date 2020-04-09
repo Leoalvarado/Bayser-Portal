@@ -257,7 +257,6 @@ img#logo{
     text-align: center;
     padding: 1em;
     width: 100%;
-
   }
 .mail {
     list-style: none;
@@ -273,13 +272,11 @@ img#logo{
     list-style: none;
     text-decoration: none;
     color: white;
-    
 }
 .home{
     list-style: none;
     text-decoration: none;
-    color: white;
-    
+    color: white; 
 }
  .icon-mail4{
     position: relative;
@@ -287,17 +284,10 @@ img#logo{
  
  .icon-facebook2{
     position: relative;
-    
 }
 .icon-whatsapp{
     position: relative;
-    font-size: 10px;
-    
-    
-}
-
-.icom-home3{
-   
+    font-size: 15px;
 }
 
 .mensaje{
