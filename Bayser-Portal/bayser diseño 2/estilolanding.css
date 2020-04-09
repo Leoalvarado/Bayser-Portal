@@ -231,7 +231,7 @@ img#logo{
 
 .lemacaja{
 
-    position: relative;
+    position: absolute;
     right: 10px;
     top: 200px;
     margin: 0;
