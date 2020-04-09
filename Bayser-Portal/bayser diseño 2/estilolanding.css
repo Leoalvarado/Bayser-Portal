@@ -232,7 +232,87 @@ img#logo{
 
 
 /*footer*/
-footer{
+footer {
+    align-self: flex-end;
+    background-color: #333333;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+
+  }
+.mail {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+.facebook {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+.whatsapp {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    
+}
+.home{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    
+}
+ .icon-mail4{
+    position: relative;
+ }
+ 
+ .icon-facebook2{
+    position: relative;
+    
+}
+.icon-whatsapp{
+    position: relative;
+    font-size: 15px;
+    
+    
+}
+
+
+.mensaje{
+position: relative;
+color: white;
+font-size:  15px;
+top: 40px;
+left: center;
+}
+.mensaje1{
+    position: relative;
+    color: white;
+    font-size:  25px;
+    top: -20px;
+    left: center;
+    }
+    
+    .mensaje2{
+        position: relative;
+        color: rgb(247, 249, 255);
+        font-size:  30px;
+        top: 15px;
+        left: center;
+        font-weight: bold;
+        
+    
+        }
+
+footer  hr{
+     position: relative;
+     top: -20px;
+    }
+/*footer{
+>>>>>>> 02ffd35aee4b68be930571c9d7b604bad204d02b
     width: 100%;
     background: #202020;
     color: white;   
