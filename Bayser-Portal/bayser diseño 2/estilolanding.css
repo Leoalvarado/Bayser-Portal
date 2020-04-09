@@ -37,7 +37,7 @@ body{
     /* min-height: 100vh; */
     /* background: #031321; */
     font-family: consolas;
-    z-index: 3;
+    z-index: 10;
     
 }    
 /*Este es el rectangulo del boton*/
