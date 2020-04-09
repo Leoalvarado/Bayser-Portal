@@ -147,6 +147,7 @@ nav{
      margin: 0;
      height: auto;
      padding:  0;   
+     z-index: 10;
 }
 
 header nav ul{
