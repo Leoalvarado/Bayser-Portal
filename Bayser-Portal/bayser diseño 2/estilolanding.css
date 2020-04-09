@@ -52,7 +52,7 @@ body{
     overflow: hidden;
     transition: 0.2s;
     background-color: rgba(20, 19, 19, 0.68);
-    z-index:inherit;
+    z-index:2;
     
 }
 
