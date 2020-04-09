@@ -229,7 +229,17 @@ img#logo{
     } 
 
 
+.lemacaja{
 
+    box-sizing: border-box;
+    box-shadow: rgba(20, 19, 19, 0.68);
+    background-color: transparent;
+    color: whitesmoke;
+    font-family: 'Baloo Thambi 2', Arial, Helvetica, sans-serif;
+    font-weight:bold;
+
+
+}
 
 
 footer {
