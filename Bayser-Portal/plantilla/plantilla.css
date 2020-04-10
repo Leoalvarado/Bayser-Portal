@@ -15,7 +15,7 @@ body{
 
     
 header{
-    background-color: gray;
+    background-color:white;
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -124,7 +124,7 @@ li:hover>ul{
 footer {
     position: relative;
     align-self: flex-end;
-    background-color: #455961;
+    background-color: #333333;
     color: #fff;
     font-size: 50px;
     font-weight: bold;
