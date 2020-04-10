@@ -150,26 +150,75 @@ footer {
 
 .redes-sociales{
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-.icono-mail {
+.enlace-mail {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    position: relative;
+    padding: 0px 10px;
+   /* transition-timing-function: ease-in;*/
+}
+
+.enlace-mail:hover>.span-email{
+   width: 230px;
+    transition: .3s;
     list-style: none;
     text-decoration: none;
     color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
-.icono-mail:hover{
-    list-style: none;
-    text-decoration: none;
-    color: #db4a39;
+.span-email{
+    font-size: 20px;
+    width: 230px; 
+    display: none;
+    position: absolute;
+    padding: 0px 0px 0px 2px; 
+    color: white;
 }
 
 .icon-email{
     position: relative;
  }
 
-.icono-facebook{
+
+
+.enlace-facebook{
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     text-decoration: none;
+    color: white;
+    padding: 0px 10px;
+    position: relative;
+}
+
+.enlace-facebook:hover>.span-facebook{
+    width: 180px;
+     transition: .3s;
+     list-style: none;
+     text-decoration: none;
+     color: white;
+     display: flex;
+     align-items: center;
+     position: relative;
+ }
+
+ .span-facebook{
+    font-size: 20px;
+    width: 180px; 
+    display: none;
+    position: absolute;
+    padding: 0px 0px 0px 2px;
     color: white;
 }
 
@@ -177,37 +226,68 @@ footer {
     position: relative;
 }
 
-.icono-facebook:hover{
-    list-style: none;
-    text-decoration: none;
-    color: #3b5998;
-}
-
-.icono-whatsapp {
+.enlace-whatsapp {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     text-decoration: none;
     color: white;
+    padding: 0px 10px;
+    position: relative;
 }
 
-.icono-whatsapp:hover {
+.enlace-whatsapp:hover>.span-whatsapp {
+    width: 180px;
+    transition: .3s;
     list-style: none;
     text-decoration: none;
-    color: #00bb2d;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.span-whatsapp{
+    font-size: 20px;
+    width: 180px; 
+    display: none;
+    position: absolute;
+    padding: 0px 0px 0px 2px;
+    color: white;
 }
 
 .icon-whatsapp{
     position: relative;
 }
 
-.icono-celular{
+.enlace-celular{
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     text-decoration: none;
     color: white; 
+    padding: 0px 10px;
+    position: relative;
 }
-.icono-celular:hover{
+
+.enlace-celular:hover>.span-celular {
+    width: 180px;
+    transition: .3s;
     list-style: none;
     text-decoration: none;
-    color: #2196f3; 
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.span-celular{
+    font-size: 20px;
+    width: 180px; 
+    display: none;
+    position: absolute;
+    padding: 0px 0px 0px 2px;
+    color: white;
 }
 
 .icon-phone{
@@ -258,6 +338,8 @@ footer {
     border-radius: 3%;
     box-shadow: 0px 5px 3px #333333;
 }
+
+
 
 
 .mensaje{
