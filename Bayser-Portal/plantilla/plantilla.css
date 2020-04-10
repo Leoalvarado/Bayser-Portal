@@ -131,36 +131,44 @@ ul li ul li {
                 margin-bottom: 5px;
 }
 
+/*455961-30383f*/
 footer {
+    position: relative;
     align-self: flex-end;
-    background-color: #3e3e41;
+    background-color: #455961;
     color: #fff;
     font-size: 50px;
     font-weight: bold;
     text-align: center;
-    padding: 1em;
+    padding: 0;
     width: 100%;
+    text-transform: uppercase;
   }
+
 .mail {
     list-style: none;
     text-decoration: none;
     color: white;
 }
+
 .facebook {
     list-style: none;
     text-decoration: none;
     color: white;
 }
+
 .whatsapp {
     list-style: none;
     text-decoration: none;
     color: white;
 }
+
 .home{
     list-style: none;
     text-decoration: none;
     color: white; 
 }
+
  .icon-mail4{
     position: relative;
  }
@@ -168,23 +176,52 @@ footer {
  .icon-facebook2{
     position: relative;
 }
+
 .icon-whatsapp{
     position: relative;
     font-size: 15px;
 }
 
+.container{
+    background: green;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.ubicacion{
+    background: red;
+}
+
+.horario{
+    background: yellow;
+}
+
+.socios{
+    background: blue;
+}
+
+.pregunta{
+    background: green;
+}
+
 .mensaje{
-position: relative;
-color: white;
-font-size:  15px;
-top: 40px;
-left: center;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    color: white;
+    font-size:  15px;
+    align-self: flex-end;
+    background: #000000;
+    align-items: center;
+    justify-content: center;
 }
 .mensaje1{
     position: relative;
     color: white;
     font-size:  25px;
-    top: -20px;
+    top: 5px;
     left: center;
     }
     
@@ -202,4 +239,10 @@ left: center;
 footer  hr{
      position: relative;
      top: -20px;
+    }
+
+    @media screen and (min-width:1025px){
+        .col-3{
+            flex-basis: calc(100%/3);
+        }
     }
