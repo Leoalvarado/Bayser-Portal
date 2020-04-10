@@ -177,6 +177,12 @@ footer {
     position: relative;
 }
 
+.icono-facebook:hover{
+    list-style: none;
+    text-decoration: none;
+    color: #3b5998;
+}
+
 .icono-whatsapp {
     list-style: none;
     text-decoration: none;
@@ -230,8 +236,9 @@ footer {
     justify-content: center;
 }
 
+/*2196f3 - 00ff00*/
 .pregunta-span{
-    background: #00ff00;
+    background: #2196f3;
     /*transform: rotateX(45deg);*/
     transition: 1s;
     transform: rotate(-10deg);
