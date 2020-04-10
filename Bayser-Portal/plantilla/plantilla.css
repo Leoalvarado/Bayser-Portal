@@ -193,6 +193,11 @@ footer {
     background: red;
 }
 
+.icon-time{
+    position: relative;
+    font-size: 15px;
+}
+
 .horario{
     background: yellow;
 }
