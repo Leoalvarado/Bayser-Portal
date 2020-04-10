@@ -160,7 +160,7 @@ footer {
 .icono-mail:hover{
     list-style: none;
     text-decoration: none;
-    color: red;
+    color: #db4a39;
 }
 
 .icon-email{
@@ -189,6 +189,12 @@ footer {
     color: white;
 }
 
+.icono-whatsapp:hover {
+    list-style: none;
+    text-decoration: none;
+    color: #00bb2d;
+}
+
 .icon-whatsapp{
     position: relative;
 }
@@ -197,6 +203,11 @@ footer {
     list-style: none;
     text-decoration: none;
     color: white; 
+}
+.icono-celular:hover{
+    list-style: none;
+    text-decoration: none;
+    color: #2196f3; 
 }
 
 .icon-phone{
