@@ -32,7 +32,7 @@ $(document).ready(function(){
 
 		// Dandole estilos a la paginacion seleccionada
 		$('.pagination li').css({'color': '#33333'});
-		$(this).css({'color': '##2196f3'});
+		$(this).css({'color': '#2196f3'});
 
 		imgPos = paginationPos;
 
@@ -43,7 +43,7 @@ $(document).ready(function(){
 		else {imgPos++;}
 
 		$('.pagination li').css({'color': '#858585'});
-		$('.pagination li:nth-child(' + imgPos +')').css({'color': '##2196f3'});
+		$('.pagination li:nth-child(' + imgPos +')').css({'color': '#2196f3'});
 
 		$('.slider-contenedor li').hide(); // Ocultamos todos los slides
 		$('.slider-contenedor li:nth-child('+ imgPos +')').fadeIn(); // Mostramos el Slide seleccionado
