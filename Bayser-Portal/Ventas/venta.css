@@ -1,0 +1,654 @@
+*{
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+body{
+    margin: 0;
+    padding:  0;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0%;
+}
+
+    
+header{
+    background-color:transparent;
+    height: 59.6167px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav{
+    width: 100%;
+    background-color:transparent;
+     overflow: auto;
+     margin-top: -30px;
+     text-align: center;
+     position: fixed;
+     margin: -px;
+     margin-bottom: 20px;
+     height: auto;
+     padding:  0;
+     z-index: 10;   
+}
+
+header nav ul{
+	padding: 0;
+    margin: 0;
+    list-style: none;
+    align-items: center;
+}
+
+header nav ul li{
+	display: inline-block;
+    margin: 0px;
+	padding: 0px;
+}
+
+header nav ul li a{
+    display: inline-block;
+    width: 100%;
+    padding: 17px 15px;
+    text-decoration: none;
+    text-align: center;
+    color: #333333;
+    transition: all 0.4s linear;
+    font-family: 'Baloo Thambi 2', cursive;
+    position: relative;
+    background: darkgreen(#2196f3,15);
+    text-transform: uppercase;
+}
+
+header nav ul li a::before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    background: #2196f3;
+    transition: .3s;
+}
+
+header nav ul li a:hover::before{
+    width: 100%;
+    left: 0;
+    border: none;
+    border-left: 3px solid #2196f3;
+}
+
+ul li ul li {
+    float: left;
+}
+    
+ul li ul{
+    display: none;
+    position: relative;
+    width: 200px;
+    padding: 10px 15px;    
+}
+
+li:hover>ul{
+    display: block;    
+}
+
+#body{
+    width: 100%;
+    height: 0px;
+}
+
+/*Icono de la empresa*/
+.logo{
+    position: relative;
+    margin-top: 29px;
+    margin-bottom: -10px;
+    width: 50px;
+    left: 10px;        
+}
+    
+.logo .imgnav{        
+    float: left;
+    left: 10px;
+    width:100px;
+    height: 100%;
+    top: 3px;
+    margin-bottom: 5px;
+}
+
+/*SLIDER*/
+
+
+.contenedor{
+	width: 100%;
+    position: relative;
+    height:  450px;
+
+	
+}
+.contenedor .slider-contenedor  ol{
+	list-style: none;
+}
+ul,ol{
+	list-style: none;
+}
+
+.slider-contenedor li ul{
+	width: 100%;
+	height: 400px;
+	border-style: groove;
+}
+
+.slider-contenedor li{
+	overflow: hidden;
+}
+
+.slider-contenedor li img{
+	position: relative;
+	width: 100%;
+	height: 450px;
+	
+	left: 0;
+	top: 0;
+}
+
+.slider-contenedor section{
+	position: absolute;
+	left: 30%;
+	height: 50%;
+	width: 40%;
+	top:430px ;
+	
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.slider-contenedor  .slider-informacion{
+	position: absolute;
+	width: 100%;
+	height:10000px;
+	top:  0;
+	left: 0;
+	padding: 15px 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	z-index: 1;
+
+}
+
+.slider-contenedor section h1{
+	font-size: 20px;
+	text-align: justify;
+}
+
+.slider-contenedor section p{
+   position: absolute;	
+	font-size: 15px;
+	text-align: justify;
+	
+}
+
+.pagination{
+	position: absolute;
+	top: 90%;
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+}
+
+.pagination li{
+	font-size: 20px;
+	margin: 2px 5px;
+     color: gray;
+	cursor: pointer;
+}
+
+.left, .right{
+	position: absolute;
+	top: 0;
+	height: 100%;
+
+	display: flex;
+	align-items: center;
+
+	color: #333333;
+	font-size: 35px;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.left{
+	left: 10px;
+}
+
+.right{
+	right: 10px;
+}
+
+
+
+
+
+/*CUERPO*/
+
+
+
+
+.informacion{
+    width: 100%;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.653);
+}
+
+.informacion h1{
+
+    text-align: center;
+    font-family: 'Baloo Thambi 2', cursive;
+    font-weight: lighter;
+    font-size: 32px;
+    color: #333333;
+    text-transform: uppercase;
+}
+.informacion h1::before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    position: relative;
+    left: 50%;
+    bottom: 0;
+    background: #2196f3;
+    transition: .3s;
+}
+
+.informacion h1:hover::before{
+    width: 100%;
+    left: 0;
+    border: none;
+    border-left: 3px solid #2196f3;
+}
+ .imagenventa{
+
+    position: relative;
+    width: 400px;
+    height: 360px;
+    left: 25px;
+    top: 35px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-shadow: rgba(50, 51, 50, 0.537) 0px 3px 3px 3px;
+ }
+
+ .imagenventa .pick
+ {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 360px;
+}
+
+.informacion .lineapinta{
+
+box-sizing: border-box;
+box-shadow: rgba(50, 51, 50, 0.537) 5px 0px 3px;
+border-radius: 2.5px;
+position: relative;
+background-color: #2196f3;
+width: 7px;
+height: 347px;
+top: -317px;
+left: 481px;
+
+
+
+
+}
+
+ .informacion .parrafo1{
+
+    
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: lighter;
+    position: relative;
+    width: 700px;
+    height: auto;
+    left: 600px;
+    top: -632px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ .parrafo1 p{
+
+    text-align: justify;
+ }
+
+ .informacion .parrafo2{
+
+    
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: lighter;
+    position: relative;
+    width: 700px;
+    height: auto;
+    top: -543px;
+    left: 600px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+ }
+ .parrafo2 p{
+
+    text-align: justify;
+ }
+
+
+
+
+/*FOOTER*/
+/*455961-30383f*/
+footer {
+    position: relative;
+    align-self: flex-end;
+    background-color: #333333;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+.redes-sociales{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.enlace-mail {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    position: relative;
+    padding: 0px 10px;
+}
+
+.enlace-mail:hover>.span-email{
+   width: 233px;
+    transition: .3s;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.span-email{
+    font-size: 20px;
+    width: 233px; 
+    display: none;
+    position: absolute;
+    padding: 0px 0px 0px 2px; 
+    color: white;
+}
+
+.icon-email{
+    position: relative;
+ }
+
+
+
+.enlace-facebook{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    padding: 0px 10px;
+    position: relative;
+}
+
+.enlace-facebook:hover>.span-facebook{
+    width: 180px;
+     transition: .3s;
+     list-style: none;
+     text-decoration: none;
+     color: white;
+     display: flex;
+     align-items: center;
+     position: relative;
+ }
+
+ .span-facebook{
+    font-size: 20px;
+    width: 180px; 
+    display: none;
+    position: absolute;
+    padding: 0px 0px 0px 2px;
+    color: white;
+}
+
+.icon-facebook{
+    position: relative;
+}
+
+.enlace-whatsapp {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    padding: 0px 10px;
+    position: relative;
+}
+
+.enlace-whatsapp:hover>.span-whatsapp {
+    width: 180px;
+    transition: .3s;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.span-whatsapp{
+    font-size: 20px;
+    width: 180px; 
+    display: none;
+    position: absolute;
+    padding: 0px 0px 0px 2px;
+    color: white;
+}
+
+.icon-whatsapp{
+    position: relative;
+}
+
+.enlace-celular{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-decoration: none;
+    color: white; 
+    padding: 0px 10px;
+    position: relative;
+}
+
+.enlace-celular:hover>.span-celular {
+    width: 180px;
+    transition: .3s;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.span-celular{
+    font-size: 20px;
+    width: 180px; 
+    display: none;
+    position: absolute;
+    padding: 0px 0px 0px 2px;
+    color: white;
+}
+
+.icon-phone{
+    position: relative;
+}
+
+.container{
+    font-size: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 2px 3px #333333;
+}
+
+.ubicacion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100px;
+}
+
+.icono-ubicacion{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.informacion-ubicacion{
+    display: inline;
+}
+
+.icon-location{
+    font-size: 40px;
+}
+
+.icono-horario{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.horario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-time{
+    font-size: 40px;
+}
+
+.informacion-horario{
+    display: inline;
+}
+
+.socios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono-socio-ohaus{
+    width: 50%;
+    height: 50px;
+}
+
+.pregunta{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*2196f3 - 00ff00*/
+.pregunta-span{
+    background: #2196f3;
+    transition: 1s;
+    transform: rotate(-10deg);
+    width: 400px;
+    font-size: 40px;
+    border-radius: 3%;
+    box-shadow: 0px 5px 3px #333333;
+}
+
+.mensaje{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    color: white;
+    font-size:  15px;
+    align-self: flex-end;
+    background: #000000;
+    align-items: center;
+    justify-content: center;
+}
+
+.mensaje1{
+    position: relative;
+    color: white;
+    font-size:  25px;
+    top: 5px;
+   justify-content: center;
+   width: 100%;
+}
+    
+.mensaje2{
+    position: relative;
+    color: rgb(247, 249, 255);
+    font-size:  30px;
+    top: 15px;
+    left: center;
+    font-weight: bold;
+}
+
+footer  hr{
+    position: relative;
+    top: -20px;
+}
+
+@media screen and (min-width:1025px){
+    .col-3{
+        flex-basis: calc(100%/3);
+    }
+}
