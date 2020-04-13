@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Bayser Honduras</title>
+    <link rel="stylesheet" href="formulario1.css">
+    <link rel="stylesheet" href="fonts/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap" rel="stylesheet"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src='formulario1.js'></script>
+    <script src="formulariov.js"></script>
+    <script src="jquery-3.1.0.min.js"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+	<header>
+		<nav>
+            <div class="logo">
+             <img class="imgnav" src="img/LogoNav2.png" alt="">
+            </div>
+				<ul>
+                    <li><a href="../bayser diseño 2/landing.html">Inicio</a></li>
+                    <li><a href="">Productos</a>
+                        <ul class=>
+                            <li><a href="">Basculas de Precision</a></li>
+                            <li><a href="">Basculas de Industriales</a></li>
+                            <li><a href="">Basculas de Comerciales</a></li>
+                        </ul></li>
+
+                    <li><a href="">Servicios</a>
+                        <ul >
+                            <li><a href="">Venta</a></li>
+                            <li><a href="">Instalación</a></li>
+                            <li><a href="">Mantenimiento</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Quienés Somos</a></li>
+                    <li><a href="">Cotizaciones</a></li>
+                    <li><a href="">Recomendaciones</a></li>
+                </ul>
+        </nav>
+
+        
+    </header>
+
+    
+
+
+
+
+    <section>
+
+        <div class="informacion">
+
+        <form action="plantilla.html" method="POST" id="fcot" novalidate>
+            <h2> Cotización</h2>
+            <fieldset>
+                <legend>Cotización</legend>
+
+                <label for="clientename">Nombre Completo:</label>
+                <input type="text" name="clientename" id="clientename" maxlength="35" minlength="5" placeholder="Maria Lopez" required/>
+                <span class="errorClass hidden" id="errornom"></span>    
+            </br>
+                <label for="clientecorreo">Correo Electrónico:</label>
+                <input type="email" name="clientecorreo" id="clientecorreo" maxlength="30" minlength="12" placeholder="abcd@gmail.com" autocapitalize="none" required> 
+                <span class="errorClass hidden" id="errorcorre"></span>    
+            </br>
+                    <fieldset>
+                        <legend>Productos</legend>
+                        <label for="seleccionproducto">Seleccione un Producto:</label>
+
+                        </br>
+                        <label for="producto1">Baculas de Precision</label>
+                        <select name="producto1" id="producto1" >
+                            <option value="0"select>seleccione</option>
+                            <option value="Exp">Explorer de Precisión</option>
+                            <option value="Expa">Explorer de Precision alta calidad</option>
+                            <option value="Ap">Adventurer de precisión</option>
+                            <option value="PP">Pioneer Precisión</option>
+                            <option value="Spp">Serie PR de precisión</option>
+                        </select>
+                        <label for="cantidadp">Unidades
+                            <input type="number" name="cantidadp" id="cantidadp" value="1" min="1" max="30" step="1"/></label>
+
+                        </br>
+                        </br>
+                        <label for="producto2">Basculas Industriales</label>
+                        <select name="producto2" id="producto2">
+                            <option value="0"select>Seleccione</option>
+                            <option value="Svx">Serie VX</option>
+                            <option value="Svn">Serie VN</option>
+                            <option value="Psvn">Plataforma serie VN</option>
+                            <option value="D3l">Defender 3000 Lavable</option>
+                            <option value="D3lp">Defender 3000 low profile</option>
+                            <option value="D3">Defender 3000</option>
+                        </select>
+                        <label for="cantidadp">Unidades
+                        <input type="number" name="cantidadp" id="cantidadp" value="1" min="1" max="30" step="1"/></label>
+                        </br>
+                         </br>
+
+                        
+                        <label for="producto3">Basculas Comerciales </label>
+                        <select name="producto3" id="producto3">
+                            <option value="0"select>Seleccione</option>
+                            <option value="Av7">Aviator 7000</option>
+                            <option value="Av2">Aviator 2000</option>
+                        </select>
+                        
+                        <label for="cantidadp">Unidades
+                            <input type="number" name="cantidadp" id="cantidadp" value="1" min="1" max="30" step="1"/></label>
+                    </br>
+                </br>
+                        
+                    </fieldset>
+
+                </br>
+
+                <label for="detallec">Especificacion</label>
+                    <textarea name="detallec" id="detallec" cols="20" rows="8"></textarea>
+
+            </fieldset>
+            <button type="submit">Cotizar</button>
+
+        </form>
+
+
+        </div>
+
+    </section>
+
+    <section id='body'></section>
+    <footer>          
+        <div class="mensaje1">
+            <h3>Bayser Honduras</h3>
+        </div>   
+        <div class="container">
+            <section class="ubicacion col-3">
+                <div class="icono-ubicacion">
+                    <i class= "icon-location"></i>
+                    <div class="informacion-ubicacion">
+                        <h3>Ubicación</h3>
+                        <p class="direccion-ubicacion">Colonia Nueva Suyapa,</Br> Tegucigalpa, MDC, Honduras,<br> Centroamérica</p>
+                    </div>
+                </div>
+            </section>
+            <section class="horario col-3">
+                <div class="icono-horario">
+                    <i class= "icon-time" ></i>
+                    <div class="informacion-horario">
+                        <h3>Horario</h3>
+                        <p class="texto-horario">Lunes a Viernes de 8:00 am a 5:00 pm <br> Sabados y Domingos Cerrado</p>
+                    </div>
+                </div>
+            </section>
+            <section class="socios col-3">
+                <div class="icono-ohaus">
+                    <h3 class="titulo-socios">Distribuidores de Bayser Honduras</h3>
+                    <img class="icono-socio-ohaus" src="img/ohaus2.png" alt="ohaus">
+                    <div class="icono-socios"></div>
+                </div>
+            </section>
+        </div>
+        <div class="pregunta">
+            <span class="pregunta-span">¿Ya nos sigues?</span>
+        </div>
+        <section class="redes-sociales">    
+            <a target="_blank" href="https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1" class="enlace-mail"><i class= "icon-email" ></i><span class="span-email">Envíanos un correo</span></a>
+            <a target="_blank" href="https://es-la.facebook.com/bayser.hn/" class="enlace-facebook"><i class= "icon-facebook" ></i><span class="span-facebook">Seamos Amigos</span></a>
+            <a target="_blank" href="" class="enlace-whatsapp"><i class="icon-whatsapp"></i><span class="span-whatsapp">+504-9999-9999</span></a>
+            <a target="_blank" href="" class="enlace-celular"><i class="icon-phone"></i><span class="span-celular">+504-9999-9999</span></a>
+        </section>
+        <div class="mensaje">
+            <span >Copyright &copy; 2020 | Los Piratas  </span>
+        </div>
+</footer>
+</body>
+</html>
