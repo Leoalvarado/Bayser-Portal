@@ -40,52 +40,46 @@
                 </ul>
         </nav>
 
-        
-    </header>
-
-    
-
-
-
-
-    <section>
-
+        <section>
         <div class="informacion">
 
-        <form action="plantilla.html" method="POST" id="fcot" novalidate>
-            <h2> Cotización</h2>
-            <fieldset>
-                <legend>Cotización</legend>
+        <form action="plantilla.html" class="form" method="POST" id="fcot" novalidate>
+           <div class="form-header">
+               <h1 class="form-title">C<span>otizació</span>n</h1>
+           </div> 
+                <!--Nombre Completo  -->
+                <label for="seleccionproducto" class="form-subtitle">Datos Personales</label>
 
-                <label for="clientename">Nombre Completo:</label>
-                <input type="text" name="clientename" id="clientename" maxlength="35" minlength="5" placeholder="Maria Lopez" required/>
-                <span class="errorClass hidden" id="errornom"></span>    
-            </br>
-                <label for="clientecorreo">Correo Electrónico:</label>
-                <input type="email" name="clientecorreo" id="clientecorreo" maxlength="30" minlength="12" placeholder="abcd@gmail.com" autocapitalize="none" required> 
+                <label for="clientename" class="form-label">Nombre Completo:</label>
+                <input type="text" class="form-input" name="clientename" id="clientename" maxlength="35" minlength="5" placeholder="Escriba su Nombre" required/>
+                <span class="errorClass hidden" id="errornom"></span> 
+
+                <!-- Correo Electronico -->
+                <label for="clientecorreo" class="form-label">Correo Electrónico:</label>
+                <input type="email" class="form-input" name="clientecorreo" id="clientecorreo" maxlength="30" minlength="12" placeholder="abcd@gmail.com" autocapitalize="none" required> 
                 <span class="errorClass hidden" id="errorcorre"></span>    
-            </br>
-                    <fieldset>
-                        <legend>Productos</legend>
-                        <label for="seleccionproducto">Seleccione un Producto:</label>
 
-                        </br>
-                        <label for="producto1">Baculas de Precision</label>
-                        <select name="producto1" id="producto1" >
-                            <option value="0"select>seleccione</option>
+                <!-- Producto -->
+                <label for="seleccionproducto" class="form-subtitle">Seleccione un Producto:</label>
+                    
+                    <!-- Basculas de Precision -->
+                    <label for="producto1" class="form-label">Basculas de Precision</label>
+                        <select class="form-extra" name="producto1" id="producto1" >
+                            <option value="0"select>Seleccione</option>
                             <option value="Exp">Explorer de Precisión</option>
                             <option value="Expa">Explorer de Precision alta calidad</option>
                             <option value="Ap">Adventurer de precisión</option>
                             <option value="PP">Pioneer Precisión</option>
                             <option value="Spp">Serie PR de precisión</option>
                         </select>
-                        <label for="cantidadp">Unidades
-                            <input type="number" name="cantidadp" id="cantidadp" value="1" min="1" max="30" step="1"/></label>
 
-                        </br>
-                        </br>
-                        <label for="producto2">Basculas Industriales</label>
-                        <select name="producto2" id="producto2">
+                    <!-- Unidades de Producto -->
+                    <label for="cantidadp"  class="form-label">Unidades
+                            <input type="number" class="form-extra" name="cantidadp" id="cantidadp" value="1" min="1" max="30" step="1"/></label>
+
+                    <!-- Basculas Industriales -->
+                    <label for="producto2" class="form-label">Basculas Industriales</label>
+                        <select class="form-extra" name="producto2" id="producto2">
                             <option value="0"select>Seleccione</option>
                             <option value="Svx">Serie VX</option>
                             <option value="Svn">Serie VN</option>
@@ -94,40 +88,35 @@
                             <option value="D3lp">Defender 3000 low profile</option>
                             <option value="D3">Defender 3000</option>
                         </select>
-                        <label for="cantidadp">Unidades
-                        <input type="number" name="cantidadp" id="cantidadp" value="1" min="1" max="30" step="1"/></label>
-                        </br>
-                         </br>
 
-                        
-                        <label for="producto3">Basculas Comerciales </label>
-                        <select name="producto3" id="producto3">
+                    <!-- Unidades -->
+                    <label for="cantidadp" class="form-label">Unidades
+                        <input class="form-extra" type="number" name="cantidadp" id="cantidadp" value="1" min="1" max="30" step="1"/></label>
+                    
+                    <!-- Basculas Comerciales -->
+                        <label for="producto3" class="form-label">Basculas Comerciales </label>
+                        <select class="form-extra" name="producto3" id="producto3">
                             <option value="0"select>Seleccione</option>
                             <option value="Av7">Aviator 7000</option>
                             <option value="Av2">Aviator 2000</option>
                         </select>
-                        
-                        <label for="cantidadp">Unidades
-                            <input type="number" name="cantidadp" id="cantidadp" value="1" min="1" max="30" step="1"/></label>
-                    </br>
-                </br>
-                        
-                    </fieldset>
+                    
+                    <!-- Unidades -->
+                    <label for="cantidadp" class="form-label">Unidades
+                        <input class="form-extra"type="number" name="cantidadp" id="cantidadp" value="1" min="1" max="30" step="1"/></label>
 
-                </br>
+                    <!-- Especificacion -->
+                    <label for="detallec" class="form-label">Especificacion</label>
+                    <textarea name="detallec" class="form-textarea" id="detallec" cols="20" rows="8"></textarea>
 
-                <label for="detallec">Especificacion</label>
-                    <textarea name="detallec" id="detallec" cols="20" rows="8"></textarea>
-
-            </fieldset>
-            <button type="submit">Cotizar</button>
-
+                    <input type="submit" class="btn-submit" value="Cotizar">
         </form>
-
-
         </div>
-
     </section>
+        
+    </header>
+
+    
 
     <section id='body'></section>
     <footer>          

@@ -15,6 +15,7 @@ body{
 
     
 header{
+    background-image: url(img/form_fondo_barra.jpg);
     background-color:transparent;
     height: 59.6167px;
     background-size: cover;
@@ -121,11 +122,17 @@ li:hover>ul{
 }
 
 /* Quienes Somos */
+/* .quienes{
+    position: absolute;
+    top: 0px;
+} */
+
 .container_1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: rgb(102, 185, 206);
+    background-image: url(img/form_fondo.jpg);
+    /* background-color: rgb(102, 185, 206); */
 }
 
 .container_1 .box{
