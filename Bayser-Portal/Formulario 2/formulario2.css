@@ -11,11 +11,12 @@ body{
     background: white;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0%;
-    }
-  
+}
+
+    
 header{
-    background-image: url(img/mainbayser6.jpg);
-    height: 100vh;
+    background-color:transparent;
+    height: 59.6167px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -122,26 +123,25 @@ ul li ul li {
             margin-bottom: 5px;
     } 
 
+header .btn_hamburger{
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 30px;
+    right: 7px;
+    cursor: pointer;
+}
 
-    header .btn_hamburger{
-        display: none;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 45px;
-        height: 45px;
-        position: absolute;
-        top: 30px;
-        right: 7px;
-        cursor: pointer;
-    }
-    
-    header .btn_hamburger div{
-        width: 90%;
-        height: 7px;
-        border-radius: 3px;
-        background-color: white;
-    }
+header .btn_hamburger div{
+    width: 90%;
+    height: 7px;
+    border-radius: 3px;
+    background-color: white;
+}
 /*CUERPO*/
 
 
