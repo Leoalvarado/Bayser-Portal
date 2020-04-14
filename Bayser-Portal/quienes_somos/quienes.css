@@ -25,7 +25,7 @@ header{
 
 nav{
     width: 100%;
-    background-color:transparent;
+    background-color:rgba(20, 19, 19, 0.68);
      overflow: auto;
      margin-top: -30px;
      text-align: center;
