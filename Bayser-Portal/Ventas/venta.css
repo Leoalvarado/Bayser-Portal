@@ -55,7 +55,7 @@ header nav ul li a{
     padding: 17px 15px;
     text-decoration: none;
     text-align: center;
-    color: #333333;
+    color: white; 
     transition: all 0.4s linear;
     font-family: 'Baloo Thambi 2', cursive;
     position: relative;
