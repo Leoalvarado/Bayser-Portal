@@ -1,0 +1,1712 @@
+*{
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    font-family: 'Lato', Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    color: #fff;
+}
+
+  /*Menu nav--------------------------------------------------------------------------------------------------------------------------------*/
+        
+header{
+    position: relative;
+    background-color:transparent;
+    height: 59.6167px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav{
+    width: 100%;
+    background-color:transparent;
+    overflow: auto;
+    margin-top: -30px;
+    text-align: center;
+    position: fixed;
+    margin: -px;
+    margin-bottom: 20px;
+    height: auto;
+    padding:  0;
+    z-index: 10;   
+}
+
+header nav ul{
+	padding: 0;
+    margin: 0;
+    list-style: none;
+    align-items: center;
+}
+
+header nav ul li{
+	display: inline-block;
+    margin: 0px;
+	padding: 0px;
+}
+
+header nav ul li a{
+    display: inline-block;
+    width: 100%;
+    padding: 17px 15px;
+    text-decoration: none;
+    text-align: center;
+    color: #333333;
+    transition: all 0.4s linear;
+    font-family: 'Baloo Thambi 2', cursive;
+    position: relative;
+    background: darkgreen(#2196f3,15);
+    text-transform: uppercase;
+}
+
+header nav ul li a::before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    background: #2196f3;
+    transition: .3s;
+}
+
+header nav ul li a:hover::before{
+    width: 100%;
+    left: 0;
+    border: none;
+    border-left: 3px solid #2196f3;
+}
+
+ul li ul li {
+    float: left;
+}
+    
+ul li ul{
+    display: none;
+    position: relative;
+    width: 200px;
+    padding: 10px 15px;    
+}
+
+li:hover>ul{
+    display: block;    
+}
+
+#body{
+    width: 100%;
+    height: 0px;
+}
+
+/*Icono de la empresa*/
+.logo{
+    position: relative;
+    margin-top: 29px;
+    margin-bottom: -10px;
+    width: 50px;
+    left: 10px;        
+}
+    
+.logo .imgnav{        
+    float: left;
+    left: 10px;
+    width:100px;
+    height: 100%;
+    top: 3px;
+    margin-bottom: 5px;
+}
+
+ul,ol{
+	list-style: none;	
+}
+  /*Menu final*/
+  /*slider--------------------------------------------------------------------------------------------------------------------------------------*/
+ul,ol{
+	list-style: none;	
+}
+
+.contenedor{
+	position: relative;
+	width: 100%;
+    height: 700px;	
+    top: -80px;
+}
+
+.slider-contenedor li, ul{
+	width: 100%;
+	height: 100%;
+}
+
+.slider-contenedor li{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.slider-contenedor li img{
+	position: absolute;
+	width: 100%;
+	left: 0;
+    top: 0;
+    height: 700px;
+}
+
+.slider-contenedor section{
+	position: relative;
+	left: 30%;
+	height: 50%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.slider-contenedor  .slider-informacion{
+	position: absolute;
+	width: 100%;
+	top:  0;
+	left: 0;
+	padding: 15px 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	z-index: 1;
+}
+
+.slider-contenedor section h1{
+	font-size: 20px;
+	text-align: justify;
+}
+
+.slider-contenedor section p{
+    position: absolute;	
+	font-size: 15px;
+	text-align: justify;
+}
+
+.pagination{
+	position: absolute;
+	top: 650px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.pagination li{
+	font-size: 20px;
+	margin: 2px 5px;
+    color: gray;
+    cursor: pointer;
+}
+
+.left, .right{
+	position: absolute;
+	top: -10px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	color: #2196f3;
+	font-size: 35px;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.left{
+	left: 10px;
+}
+
+.right{
+	right: 10px;
+}
+
+/*slider*/
+/*botones de slider para direccionar a las paginas de productos*/
+ .btn1, .btn2, .btn3{
+	padding: 2.5rem 7rem;
+	background: transparent;
+	border: 0.1rem solid rgb(106, 150, 185);
+	cursor:  pointer;
+	position: relative;
+	border-radius: .3rem;
+	overflow: hidden;
+	width: 10%;
+	top:300px;
+	left: -420px;   
+}
+
+.btn1::before {
+	content: "Basculas De Precisión";
+	position: absolute;
+	top: 20%;
+	left: 2%;
+	translate: translate(-50%,-50%);
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+	font-weight: 700;
+	text-shadow: .1rem .1rem .1rem #333;
+	transition: .2s ease;
+}
+
+.btn1::after{
+	content: "Bayser Honduras";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	translate: translate(-50%,-50%) scale(0) ;
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+    opacity: 0;
+}
+
+ .btn2::before {
+	content: "Basculas Comerciales";
+	position: absolute;
+	top: 20%;
+	left: 2%;
+	translate: translate(-50%,-50%);
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+}
+
+.btn2::after{
+    content: "Bayser Honduras";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: translate(-50%,-50%) scale(0) ;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+    opacity: 0;
+}
+
+.btn3::before {
+	content: "Basculas Industriales";
+	position: absolute;
+	top: 20%;
+	left: 2%;
+	translate: translate(-50%,-50%);
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+}
+
+.btn3::after{
+    content: "Bayser Honduras";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: translate(-50%,-50%) scale(0) ;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+    opacity: 0;
+}
+ .btn1:hover::before,.btn2:hover::before,.btn3:hover::before{
+    transform: translate(-50%,-50%) scale(3);
+    opacity: 0;
+}
+
+.btn1:hover::after,.btn2:hover::after,.btn3:hover::after{
+	transform: translate(-50%,-50%) scale(1);
+	opacity: 1;
+}
+/*botones*/
+/*slider*/
+
+/*-------------------------------------------matriz-productos--------------------------------------------*/
+p {
+    line-height: 1.5;
+    display: flex;
+    padding: 0px 10px;
+}
+
+h1{
+    text-align: center;
+    color: black;
+}
+
+.columna-6{
+    box-shadow: 0px 0px 3px #333333;
+    border-top: 1px solid #333333;
+    text-align: justify;
+    display: flex;
+}
+
+.matriz-basculas{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.titulo-producto{
+    display: flex;
+    top: 0;
+    justify-content: center;
+}
+
+/*-----------------------------------------------footer--------------------------------------------------*/
+footer {
+    position: relative;
+    align-self: flex-end;
+    background-color: #333333;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.container{
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 2px 3px #ffff;
+}
+
+.ubicacion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100px;
+}
+
+.icono-ubicacion{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.informacion-ubicacion{
+    display: inline;
+}
+
+
+.icono-horario{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.horario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.informacion-horario{
+    display: inline;
+}
+
+.socios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-sociales{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.enlace-mail {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    position: relative;
+    padding: 0px 10px;
+}
+
+.enlace-mail:hover>.span-email{
+   width: 233px;
+    transition: .3s;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.span-email{
+    font-size: 20px;
+    width: 233px; 
+    display: none;
+    position: absolute;
+    padding: 0px 0px 0px 2px; 
+    color: white;
+}
+
+.icon-email{
+    position: relative;
+ }
+
+.enlace-facebook{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    padding: 0px 10px;
+    position: relative;
+}
+
+.enlace-facebook:hover>.span-facebook{
+    width: 180px;
+     transition: .3s;
+     list-style: none;
+     text-decoration: none;
+     color: white;
+     display: flex;
+     align-items: center;
+     position: relative;
+ }
+
+ .span-facebook{
+    font-size: 20px;
+    width: 180px; 
+    display: none;
+    position: absolute;
+    padding: 0px 0px 0px 2px;
+    color: white;
+}
+
+.icon-facebook{
+    position: relative;
+}
+
+.enlace-whatsapp {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    padding: 0px 10px;
+    position: relative;
+}
+
+.enlace-whatsapp:hover>.span-whatsapp {
+    width: 180px;
+    transition: .3s;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.span-whatsapp{
+    font-size: 20px;
+    width: 180px; 
+    display: none;
+    position: absolute;
+    padding: 0px 0px 0px 2px;
+    color: white;
+}
+
+.icon-whatsapp{
+    position: relative;
+}
+
+.enlace-celular{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-decoration: none;
+    color: white; 
+    padding: 0px 10px;
+    position: relative;
+}
+
+.enlace-celular:hover>.span-celular {
+    width: 180px;
+    transition: .3s;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.span-celular{
+    font-size: 20px;
+    width: 180px; 
+    display: none;
+    position: absolute;
+    padding: 0px 0px 0px 2px;
+    color: white;
+}
+
+.icon-phone{
+    position: relative;
+}
+
+.pregunta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pregunta-span{
+    background: #2196f3;
+    transform: rotate(-10deg);
+}
+
+.Copyright{
+    display: flex;
+    position: relative;
+    color: white;
+    align-self: flex-end;
+    background: #000000;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-footer{
+    position: relative;
+    color: white;
+    top: 5px;
+    justify-content: center;
+}
+
+
+footer  hr{
+    position: relative;
+    top: -20px;
+}
+
+/*----------------------------------------------media query---------------------------------------*/
+@media screen and (min-width:320px){
+/*Responsive del slider*/ 
+.contenedor{
+    flex-basis: 100%;
+    height: 400px;
+}
+    
+.slider-contenedor li, ul{   
+    width: 100%;
+    height: 100%;
+}
+    
+.slider-contenedor li{
+    flex-basis: 100%;
+    height: 100%;   
+}
+    
+.slider-contenedor li img{
+    width: 100%;
+    height: 400px;
+}
+    
+.slider-contenedor section{
+    height: 50%;    
+}
+    
+.slider-contenedor  .slider-informacion{
+    flex-basis: 100%;
+    padding: 15px 50px;
+    display: flex;   
+}
+    
+.pagination{
+    top: 382px;
+    flex-basis: 100%;
+    display: flex;
+}
+    
+.pagination li{
+    font-size:  10px;
+    margin: 2px 5px;
+}
+    
+.left, .right{
+    top: 9px;
+    height: 100%;
+    display: flex; 
+    font-size: 20px;
+}
+    
+.btn1, .btn2, .btn3{    
+    padding: 1rem 3rem;
+    width: 10%;
+    top: 195px;
+    left: -115px;
+}
+
+.btn1::before {
+    content: "Basculas De Precisión";
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    translate: translate(-50%,-50%);
+    font-size: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+}
+    
+.btn1::after{
+    content: "Bayser Honduras";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: translate(-50%,-50%) scale(0) ;
+    font-size: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+    opacity: 0;
+}
+
+.btn2::before {
+    content: "Basculas Comerciales";
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    translate: translate(-50%,-50%);
+    font-size: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+}
+    
+.btn2::after{
+    content: "Bayser Honduras";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: translate(-50%,-50%) scale(0) ;
+    font-size: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+    opacity: 0;
+}
+    
+.btn3::before {
+    content: "Basculas Industriales";
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    translate: translate(-50%,-50%);
+    font-size: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+}
+    
+.btn3::after{
+    content: "Bayser Honduras";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: translate(-50%,-50%) scale(0) ;
+    font-size: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+    opacity: 0;
+}
+     
+/*Responsive del slider*/   
+    
+header nav ul li{
+    display: none;
+}
+
+.matriz-basculas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.columna-6{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    height: 350px;
+    margin: 5px;
+    color: black;
+    flex-basis: calc(100%/1);
+    transition: .5s;
+}
+
+.columna-6:hover{
+    height: 370px;
+    margin: 5px;
+    color: white;
+    background: black;
+    flex-grow: .3;
+}
+
+.imagen-bascula{
+    height: 100%;
+    width: 48%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.informacion-producto{
+    font-size: 12.3px;
+    line-height: 1.2;
+}
+
+.parrafo-columna{
+    line-height: 1.2;
+    padding: 0px 4px;
+}
+
+.col-3{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    flex-basis: calc(100%/1);
+    margin-bottom: 5px;
+}
+
+footer{
+    flex-basis: 100%;
+}
+
+.redes-sociales{
+    flex-basis: 100%;
+    font-size: 30px;
+}
+
+.container{
+    flex-basis: calc(100%/1);
+    font-size: 12px;
+    flex-wrap: wrap;
+}
+
+.icono-ubicacion{
+    display: inline;
+    height: inherit;
+}
+
+.icon-location{
+    font-size: 30px;
+}
+
+.direccion-ubicacion{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.icono-horario{
+    display: inline;
+    height: inherit;
+}
+
+.icon-time{
+    font-size: 30px;
+}
+
+.texto-horario{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.socios{
+    height: auto;
+}
+
+.icono-socio-ohaus{
+    width: 30%;
+    height: 25px;
+}
+
+.pregunta{
+    flex-basis: 100%;
+    height: 100px;
+}
+
+.pregunta-span{
+    flex-basis: calc(100%/1.8);
+    font-size: 20px;
+}
+
+.Copyright{
+    height: 50px;
+    flex-basis: 100%;
+    font-size:  15px;
+}
+
+.titulo-footer{
+    font-size:  20px;
+    flex-basis: 100%;
+}
+}
+
+@media screen and (min-width:481px){
+/*Responsive del slider*/ 
+.contenedor{
+    flex-basis: 100%;
+    height: 650px;
+}
+
+.slider-contenedor li, ul{
+    width: 100%;
+    height: 100%;
+}
+
+.slider-contenedor li{
+    flex-basis: 100%;
+    height: 100%;   
+}
+
+.slider-contenedor li img{
+    width: 100%;
+    height: 650px;
+}
+
+.slider-contenedor section{
+    height: 50%;
+}
+
+.slider-contenedor  .slider-informacion{
+    flex-basis: 100%;
+    padding: 15px 50px;
+    display: flex;
+}
+
+
+.pagination{
+    top: 630px;
+    flex-basis: 100%;
+    display: flex;
+}
+
+.pagination li{
+    font-size:  10px;
+    margin: 2px 5px;
+ }
+
+.left, .right{
+    top: -23px;
+    height: 100%;
+    display: flex; 
+    font-size: 25px;
+}
+
+.btn1, .btn2, .btn3{    
+    padding: 1.6rem 4.3rem;
+    width: 10%;
+    top: 290px;
+    left: -235px; 
+}
+  
+.btn1::before {
+    content: "Basculas De Precisión";
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    translate: translate(-50%,-50%);
+    font-size: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+}
+
+.btn1::after{
+    content: "Bayser Honduras";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: translate(-50%,-50%) scale(0) ;
+    font-size: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+    opacity: 0;
+}
+
+.btn2::before {
+    content: "Basculas Comerciales";
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    translate: translate(-50%,-50%);
+    font-size: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+}
+
+.btn2::after{
+    content: "Bayser Honduras";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: translate(-50%,-50%) scale(0) ;
+    font-size: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+    opacity: 0;
+}
+
+.btn3::before {
+    content: "Basculas Industriales";
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    translate: translate(-50%,-50%);
+    font-size: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+}
+
+.btn3::after{
+    content: "Bayser Honduras";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: translate(-50%,-50%) scale(0) ;
+    font-size: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+    opacity: 0;
+}
+/*Responsive del slider*/      
+header nav ul li{
+    display: none;
+}
+
+.matriz-basculas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.columna-6{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    height: 320px;
+    margin: 5px;
+    color: black;
+    /* border: 1px solid red;*/
+    flex-basis: calc(100%/1.1);
+    /*  background: pink;*/
+    transition: .5s;
+}
+
+.columna-6:hover{
+    height: 350px;
+    margin: 5px;
+    color: white;
+    /* border: 1px solid red;*/
+    /* flex-basis: calc(100%/3);*/
+    background: black;
+    flex-grow: .3;
+}
+
+
+.imagen-bascula{
+    height: 100%;
+    width: 40%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.informacion-producto{
+    font-size: 14px;
+    line-height: 1;
+}
+
+.col-3{
+    flex-basis: calc(100%/3);
+}
+
+footer{
+    flex-basis: 100%;
+    /*  font-size: 30px;*/
+}
+
+.container{
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 2px 3px #ffff;
+}
+    
+    
+.icono-ubicacion{
+    display: flex;
+    /*  width: 100%;*/
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+    
+    
+.icono-horario{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+    
+.horario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+        
+.informacion-horario{
+    display: inline;
+}
+    
+.socios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-sociales{
+    flex-basis: 100%;
+    font-size: 30px;
+}
+
+.container{
+    flex-basis: calc(100%/1);
+    font-size: 12px;
+    flex-wrap: wrap;
+    height: 130px;
+    align-items: center;
+}
+
+.icon-location{
+    font-size: 35px;
+}
+
+.icon-time{
+    font-size: 35px;
+}
+
+.icono-socio-ohaus{
+    width: 30%;
+    height: 25px;
+}
+
+.pregunta{
+    flex-basis: 100%;
+    height: 130px;
+}
+
+.pregunta-span{
+    flex-basis: calc(100%/2.7);
+    font-size: 20px;
+}
+
+.Copyright{
+    height: 50px;
+    flex-basis: 100%;
+    font-size:  15px;
+}
+
+.titulo-footer{
+    font-size:  20px;
+    flex-basis: 100%;
+}
+}
+
+@media screen and (min-width:768px){   
+/*Responsive del slider*/ 
+.contenedor{
+    flex-basis: 100%;
+    height: 700px;	
+}
+
+.slider-contenedor li, ul{
+    width: 100%;
+    height: 100%;
+}
+
+.slider-contenedor li{
+    flex-basis: 100%;
+    height: 100%;   
+}
+
+.slider-contenedor li img{
+    width: 100%;
+    height: 700px;
+}
+
+.slider-contenedor section{
+    height: 50%;
+}
+
+.slider-contenedor  .slider-informacion{
+    flex-basis: 100%;
+    padding: 15px 50px;
+    display: flex;
+}
+
+.pagination{
+    top: 670px;
+    flex-basis: 100%;
+    display: flex;
+}
+
+.pagination li{
+    font-size:  15px;
+    margin: 2px 5px;
+ }
+
+.left, .right{
+    top: -10px;
+    height: 100%;
+    display: flex; 
+    font-size: 30px;
+}
+
+.btn1, .btn2, .btn3{    
+    padding: 2rem 5.3rem;
+    width: 10%;
+    left: -302px;
+    top: 315px;
+}
+
+.btn1::before {
+    content: "Basculas De Precisión";
+    position: absolute;
+    top: 22.5%;
+    left: 2%;
+    translate: translate(-50%,-50%);
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+}
+
+.btn1::after{
+    content: "Bayser Honduras";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: translate(-50%,-50%) scale(0) ;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+    opacity: 0;
+}
+
+.btn2::before {
+    content: "Basculas Comerciales";
+    position: absolute;
+    top: 22.5%;
+    left: 2%;
+    translate: translate(-50%,-50%);
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+}
+
+.btn2::after{
+    content: "Bayser Honduras";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: translate(-50%,-50%) scale(0) ;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+    opacity: 0;
+}
+
+.btn3::before {
+    content: "Basculas Industriales";
+    position: absolute;
+    top: 22.5%;
+    left: 2%;
+    translate: translate(-50%,-50%);
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+}
+
+.btn3::after{
+    content: "Bayser Honduras";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: translate(-50%,-50%) scale(0) ;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+    opacity: 0;
+}
+/*Responsive del slider*/     
+header nav ul li{
+    display: none;
+}
+
+.matriz-basculas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.columna-6{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    height: 325px;
+    flex-basis: calc(100%/1.3);
+    flex-grow: .4;
+    color: black;
+    transition: .5s;
+}
+
+.columna-6:hover{
+    height: 335px;
+    margin: 5px;
+    color: white;
+    background: black;
+    flex-grow: .5;
+}
+
+.imagen-bascula{
+    height: 100%;
+    width: 40%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.informacion-producto{
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.col-3{
+    flex-basis: calc(100%/3);
+}
+
+footer{
+    flex-basis: 100%;
+    /*  font-size: 30px;*/
+}
+
+.redes-sociales{
+    flex-basis: 100%;
+    font-size: 30px;
+}
+
+.container{
+    flex-basis: 100%;
+    font-size: 12px;
+}
+
+.icon-location{
+    font-size: 35px;
+}
+
+.icon-time{
+    font-size: 35px;
+}
+
+.icono-socio-ohaus{
+    width: 40%;
+    height: 35px;
+}
+
+.pregunta{
+    flex-basis: 100%;
+    height: 130px;
+}
+
+.pregunta-span{
+    flex-basis: calc(100%/3.4);
+    font-size: 25px;
+}
+
+.Copyright{
+    height: 50px;
+    flex-basis: 100%;
+    font-size:  15px;
+}
+
+.titulo-footer{
+    font-size:  20px;
+    flex-basis: 100%;
+}
+}
+
+@media screen and (min-width:1025px){
+/*Responsive del slider*/ 
+.contenedor{
+    flex-basis: 100%;
+    height: 700px;	
+}
+    
+.slider-contenedor li, ul{    
+    flex-basis: 100%;
+    height: 100%;
+}
+    
+.slider-contenedor li{
+    flex-basis: 100%;
+    height: 100%;   
+}
+    
+.slider-contenedor li img{
+    flex-basis: 100%;
+    height: 700px;
+}
+    
+.slider-contenedor section{
+    height: 50%;    
+}
+    
+.slider-contenedor  .slider-informacion{
+    flex-basis: 100%;
+    padding: 15px 50px;
+    display: flex;   
+}
+    
+.slider-contenedor section h1{
+    font-size: 20px;
+}
+    
+.slider-contenedor section p{
+    font-size: 15px;    
+}
+    
+.pagination{
+    top: 660px;
+    flex-basis: 100%;
+    display: flex;
+}
+    
+.pagination li{
+    font-size: 20px;
+    margin: 2px 5px;
+}
+    
+.left, .right{
+    top: -10px;
+    height: 100%;
+    display: flex; 
+    font-size: 35px;
+}
+    
+.btn1, .btn2, .btn3{
+    padding: 2.5rem 7rem;
+    width: 10%;
+    top:330px;
+    left: -413px;
+}
+
+.btn1::before {
+    content: "Basculas De Precisión";
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    translate: translate(-50%,-50%);
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+}
+    
+.btn1::after{
+    content: "Bayser Honduras";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: translate(-50%,-50%) scale(0) ;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+    opacity: 0;
+}
+
+.btn2::before {
+    content: "Basculas Comerciales";
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    translate: translate(-50%,-50%);
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+}
+    
+.btn2::after{
+    content: "Bayser Honduras";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: translate(-50%,-50%) scale(0) ;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+    opacity: 0;
+}
+    
+.btn3::before {
+    content: "Basculas Industriales";
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    translate: translate(-50%,-50%);
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+}
+    
+.btn3::after{
+    content: "Bayser Honduras";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: translate(-50%,-50%) scale(0) ;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+    opacity: 0;
+}
+
+ /*Responsive del slider*/       
+header nav ul li{
+    display: inline-block;
+}
+
+.matriz-basculas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 5px;
+}
+
+.columna-6{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    height: 340px;
+    flex-basis: calc(100%/3);
+    flex-grow: .4;
+    color: black;
+    transition: .5s;
+}
+
+.columna-6:hover{
+    height: 350px;
+    margin: 5px;
+    color: white;
+    background: black;
+    flex-grow: .5;
+}
+
+.imagen-bascula{
+    height: 100%;
+    width: 38%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.informacion-producto{
+    font-size: 13.5px;
+    line-height: 1.5;
+}
+
+.col-3{
+    flex-basis: calc(100%/3);
+}
+
+footer{
+    flex-basis: 100%;
+    /*font-size: 50px;*/
+}
+
+.redes-sociales{
+    flex-basis: 100%;
+    font-size: 40px;
+}
+
+.container{
+    flex-basis: 100%;
+    /* font-size: 30px;*/
+}
+
+.icon-location{
+    font-size: 40px;
+}
+
+.informacion-ubicacion{
+    display: inline;
+    font-size: 13px;
+}
+
+.icon-time{
+    font-size: 40px;
+}
+
+.informacion-horario{
+    display: inline;
+    font-size: 13px;
+}
+
+.icono-socio-ohaus{
+    width: 50%;
+    height: 45px;
+}
+
+.icono-ohaus{
+    font-size: 13px;
+}
+
+.pregunta{
+    flex-basis: 100%;
+    height: 140px;
+}
+
+.pregunta-span{
+    flex-basis: calc(100%/3.5);
+    /*width: 400px;*/
+    font-size: 30px;
+}
+
+.Copyright{
+    height: 50px;
+    flex-basis: 100%;
+    font-size:  15px;
+}
+
+.titulo-footer{
+    font-size:  25px;
+    flex-basis: 100%;
+}
+}
