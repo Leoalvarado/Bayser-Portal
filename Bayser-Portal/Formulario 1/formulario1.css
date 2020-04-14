@@ -1,0 +1,542 @@
+*{
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+body{
+    margin: 0;
+    padding:  0;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0%;
+}
+
+    
+header{
+    /* background-image: url(img/form_fondo_barra.jpg);
+    background-color:transparent;
+    height: 59.6167px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+
+    
+    width: 100%;
+    height: 1000px;
+    background-image: url(img/form_fondo.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+nav{
+    width: 100%;
+    background-color:transparent;
+     overflow: auto;
+     margin-top: -30px;
+     text-align: center;
+     position: fixed;
+     margin: -px;
+     margin-bottom: 20px;
+     height: auto;
+     padding:  0;
+     z-index: 10;   
+}
+
+header nav ul{
+	padding: 0;
+    margin: 0;
+    list-style: none;
+    align-items: center;
+}
+
+header nav ul li{
+	display: inline-block;
+    margin: 0px;
+	padding: 0px;
+}
+
+header nav ul li a{
+    display: inline-block;
+    width: 100%;
+    padding: 17px 15px;
+    text-decoration: none;
+    text-align: center;
+    color: #333333;
+    transition: all 0.4s linear;
+    font-family: 'Baloo Thambi 2', cursive;
+    position: relative;
+    background: darkgreen(#2196f3,15);
+    text-transform: uppercase;
+}
+
+header nav ul li a::before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    background: #2196f3;
+    transition: .3s;
+}
+
+header nav ul li a:hover::before{
+    width: 100%;
+    left: 0;
+    border: none;
+    border-left: 3px solid #2196f3;
+}
+
+ul li ul li {
+    float: left;
+}
+    
+ul li ul{
+    display: none;
+    position: relative;
+    width: 200px;
+    padding: 10px 15px;    
+}
+
+li:hover>ul{
+    display: block;    
+}
+
+#body{
+    width: 100%;
+    height: 0px;
+}
+
+/*Icono de la empresa*/
+.logo{
+    position: relative;
+    margin-top: 29px;
+    margin-bottom: -10px;
+    width: 50px;
+    left: 10px;        
+}
+    
+.logo .imgnav{        
+    float: left;
+    left: 10px;
+    width:100px;
+    height: 100%;
+    top: 3px;
+    margin-bottom: 5px;
+}
+
+/*SLIDER*/
+
+
+
+/*CUERPO*/
+
+
+/* Formulario Validaciones */
+
+  input.error {
+    outline-style: solid;
+    outline-color: maroon;
+  }
+
+input.error {
+    outline-style: solid;
+    outline-color: #2196f3;
+  }
+  .errorClass{
+    font-weight: 200;
+    color:#2196f3;
+  }
+
+
+/* Formulario */
+/* .informacion{
+    width: 100%;
+    height: 1000px;
+    background-image: url(img/form_fondo.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+} */
+
+.informacion .form .form-header .form-title{
+    font-weight: normal;
+    font-family: sans-serif;
+    color:#276ff5;
+    text-align: center;
+    padding: 14px 0;
+}
+
+.informacion .form .form-subtitle{
+    font-weight: normal;
+    font-family: sans-serif;
+    color:#fff;
+    padding: 14px 0;   
+}
+
+.informacion .form .form-header .form-title span{
+    color: #fff;
+}
+
+.informacion .form{
+    position: absolute;
+    top: 50px;
+    right: 330px;
+    background: rgba(0,0,0,.6);
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    /* margin-top: 30px; */
+    padding-bottom: 30px;
+    border-radius: 3px;
+
+    
+}
+
+.informacion .form .form-label{
+    display: block;
+    color: #276ff5;
+    font-size: 16px;
+    font-family: Roboto;
+    position: relative;
+}
+
+.informacion .form .form-input, .form-textarea{
+    background: rgba(0,0,0,.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #31569b;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #FFF;
+    font-family: Roboto;   
+}
+
+.informacion .form .form-extra{
+    background: rgba(0,0,0,.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #276ff5;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #FFF;
+    font-family: Roboto; 
+}
+
+.informacion .form .form-textarea{
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+
+.informacion .form .btn-submit{
+    width: 100%;
+    font-family: Roboto;
+    outline: none;
+    background: #276ff5;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+/*455961-30383f*/
+footer {
+    position: relative;
+    align-self: flex-end;
+    background-color: #333333;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+.redes-sociales{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.enlace-mail {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    position: relative;
+    padding: 0px 10px;
+}
+
+.enlace-mail:hover>.span-email{
+   width: 233px;
+    transition: .3s;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.span-email{
+    font-size: 20px;
+    width: 233px; 
+    display: none;
+    position: absolute;
+    padding: 0px 0px 0px 2px; 
+    color: white;
+}
+
+.icon-email{
+    position: relative;
+ }
+
+
+
+.enlace-facebook{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    padding: 0px 10px;
+    position: relative;
+}
+
+.enlace-facebook:hover>.span-facebook{
+    width: 180px;
+     transition: .3s;
+     list-style: none;
+     text-decoration: none;
+     color: white;
+     display: flex;
+     align-items: center;
+     position: relative;
+ }
+
+ .span-facebook{
+    font-size: 20px;
+    width: 180px; 
+    display: none;
+    position: absolute;
+    padding: 0px 0px 0px 2px;
+    color: white;
+}
+
+.icon-facebook{
+    position: relative;
+}
+
+.enlace-whatsapp {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    padding: 0px 10px;
+    position: relative;
+}
+
+.enlace-whatsapp:hover>.span-whatsapp {
+    width: 180px;
+    transition: .3s;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.span-whatsapp{
+    font-size: 20px;
+    width: 180px; 
+    display: none;
+    position: absolute;
+    padding: 0px 0px 0px 2px;
+    color: white;
+}
+
+.icon-whatsapp{
+    position: relative;
+}
+
+.enlace-celular{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-decoration: none;
+    color: white; 
+    padding: 0px 10px;
+    position: relative;
+}
+
+.enlace-celular:hover>.span-celular {
+    width: 180px;
+    transition: .3s;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.span-celular{
+    font-size: 20px;
+    width: 180px; 
+    display: none;
+    position: absolute;
+    padding: 0px 0px 0px 2px;
+    color: white;
+}
+
+.icon-phone{
+    position: relative;
+}
+
+.container{
+    font-size: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 2px 3px #ffff;
+}
+
+.ubicacion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100px;
+}
+
+.icono-ubicacion{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.informacion-ubicacion{
+    display: inline;
+}
+
+.icon-location{
+    font-size: 40px;
+}
+
+.icono-horario{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.horario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-time{
+    font-size: 40px;
+}
+
+.informacion-horario{
+    display: inline;
+}
+
+.socios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono-socio-ohaus{
+    width: 50%;
+    height: 50px;
+}
+
+.pregunta{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*2196f3 - 00ff00*/
+.pregunta-span{
+    background: #2196f3;
+    transition: 1s;
+    transform: rotate(-10deg);
+    width: 400px;
+    font-size: 40px;
+    border-radius: 3%;
+    box-shadow: 0px 5px 3px #333333;
+}
+
+.mensaje{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    color: white;
+    font-size:  15px;
+    align-self: flex-end;
+    background: #000000;
+    align-items: center;
+    justify-content: center;
+}
+
+.mensaje1{
+    position: relative;
+    color: white;
+    font-size:  25px;
+    top: 5px;
+   justify-content: center;
+   width: 100%;
+}
+    
+.mensaje2{
+    position: relative;
+    color: rgb(247, 249, 255);
+    font-size:  30px;
+    top: 15px;
+    left: center;
+    font-weight: bold;
+}
+
+footer  hr{
+    position: relative;
+    top: -20px;
+}
+
+@media screen and (min-width:1025px){
+    .col-3{
+        flex-basis: calc(100%/3);
+    }
+}
