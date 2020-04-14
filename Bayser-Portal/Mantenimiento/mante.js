@@ -19,10 +19,9 @@ $(document).ready(function(){
 			}
 		}else{
 			if(flag){
-				$("nav").css({"background-color": "transparent"});
-				/*$("ul li ul").css({"background-color": "rgba(255, 254, 254, 0.596)"});*/
-				$("header nav ul li a").css({"color": "#333333"});
-				$("ul li ul li a").css({"color": "#333333"});
+				$("nav").css({"background-color": "rgba(20, 19, 19, 0.68)"});
+				$("header nav ul li a").css({"color": "white"});
+				$("ul li ul li a").css({"color": "white"});
 				flag = false;
 			}
 		}
