@@ -171,10 +171,10 @@ header .btn_hamburger div{
 }
 
 .informacion .form .form-subtitle{
-    font-weight: normal;
-    font-family: sans-serif;
-    color:#fff;
-    padding: 14px 0;   
+    font-weight: bold;
+    font-family: Roboto;
+    color:#276ff5;
+    padding: 20px 0;   
 }
 
 .informacion .form .form-header .form-title span{
@@ -197,27 +197,35 @@ header .btn_hamburger div{
 
 .informacion .form .form-label{
     display: block;
-    color: #276ff5;
+    color: #fff;
     font-size: 16px;
     font-family: Roboto;
     position: relative;
 }
 
-.informacion .form .form-input, .form-textarea{
-    background: rgba(0,0,0,.7);
-    border: none;
-    outline: none;
-    border-bottom: 2px solid #31569b;
-    width: 100%;
+.informacion .form .form-uni{
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    font-family: Roboto;
+    position: relative;
+    top: -49px;
+    left: 458px;
+    margin: -28px;
+    padding: 0;
+    width: 15px;
+    
+    /* width: 50%;
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 2px;
     font-size: 14px;
     color: #FFF;
-    font-family: Roboto;   
+    font-family: Roboto;    */
+
 }
 
-.informacion .form .form-extra{
+.informacion .form .form-input, .form-textarea{
     background: rgba(0,0,0,.7);
     border: none;
     outline: none;
@@ -228,7 +236,42 @@ header .btn_hamburger div{
     border-radius: 2px;
     font-size: 14px;
     color: #FFF;
+    font-family: Roboto;   
+}
+
+.informacion .form .form_select{
+    background: rgba(0,0,0,.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #276ff5;
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #FFF;
+    font-family: Roboto;   
+}
+
+.informacion .form .form-extra{
+    /* Prueba Posicion */
+    position: relative;
+    display: flex;
+    left: -1px;
+    top: 1px;
+
+    background: rgba(0,0,0,.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #276ff5;
+    width: 150px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #FFF;
     font-family: Roboto; 
+
 }
 
 .informacion .form .form-textarea{
@@ -247,6 +290,13 @@ header .btn_hamburger div{
     color: #fff;
     padding: 15px 0;
     cursor: pointer;
+}
+
+.seleccion{
+    display: block;
+    width: 100%;
+    height: 85px;
+    position: relative;
 }
 
 footer {
