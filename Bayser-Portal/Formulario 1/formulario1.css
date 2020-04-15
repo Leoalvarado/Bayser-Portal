@@ -299,24 +299,72 @@ header .btn_hamburger div{
     position: relative;
 }
 
+/*-----------------------------------------------footer--------------------------------------------------*/
 footer {
     position: relative;
     align-self: flex-end;
     background-color: #333333;
     color: #fff;
-    font-size: 50px;
     font-weight: bold;
     text-align: center;
     padding: 0;
-    width: 100%;
     text-transform: uppercase;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-.redes-sociales{
+.container{
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 2px 3px #ffff;
+}
+
+.ubicacion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100px;
+}
+
+.icono-ubicacion{
+    display: flex;
     width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.informacion-ubicacion{
+    display: inline;
+}
+
+.icono-horario{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.horario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacion-horario{
+    display: inline;
+}
+
+.socios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-sociales{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -334,7 +382,7 @@ footer {
 }
 
 .enlace-mail:hover>.span-email{
-    width: 233px;
+   width: 233px;
     transition: .3s;
     list-style: none;
     text-decoration: none;
@@ -355,7 +403,7 @@ footer {
 
 .icon-email{
     position: relative;
- }
+}
 
 .enlace-facebook{
     display: flex;
@@ -459,73 +507,7 @@ footer {
     position: relative;
 }
 
-.container{
-    font-size: 15px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    box-shadow: 0px 2px 3px #ffff;
-}
-
-.ubicacion{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 100px;
-}
-
-.icono-ubicacion{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.informacion-ubicacion{
-    display: inline;
-}
-
-.icon-location{
-    font-size: 40px;
-}
-
-.icono-horario{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.horario{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.icon-time{
-    font-size: 40px;
-}
-
-.informacion-horario{
-    display: inline;
-}
-
-.socios{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.icono-socio-ohaus{
-    width: 50%;
-    height: 50px;
-}
-
 .pregunta{
-    width: 100%;
-    height: 130px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -533,43 +515,24 @@ footer {
 
 .pregunta-span{
     background: #2196f3;
-    transition: 1s;
     transform: rotate(-10deg);
-    width: 400px;
-    font-size: 40px;
-    border-radius: 3%;
-    box-shadow: 0px 5px 3px #333333;
 }
 
-.mensaje{
+.Copyright{
     display: flex;
-    height: 50px;
-    width: 100%;
     position: relative;
     color: white;
-    font-size:  15px;
     align-self: flex-end;
     background: #000000;
     align-items: center;
     justify-content: center;
 }
 
-.mensaje1{
+.titulo-footer{
     position: relative;
     color: white;
-    font-size:  25px;
     top: 5px;
     justify-content: center;
-    width: 100%;
-}
-    
-.mensaje2{
-    position: relative;
-    color: rgb(247, 249, 255);
-    font-size:  30px;
-    top: 15px;
-    left: center;
-    font-weight: bold;
 }
 
 footer  hr{
@@ -578,6 +541,7 @@ footer  hr{
 }
 
 @media screen and (min-width:320px){
+/*responsive del nav*/
 .logo .imgnav{
     width: 6em;
     height: 3em;
@@ -621,10 +585,96 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
     width: 60%;
         transition: width 0.1s linear;
     }
+/*responsive del footer*/
+.col-3{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    flex-basis: calc(100%/1);
+    margin-bottom: 5px;
+}
+
+footer{
+    flex-basis: 100%;
+}
+
+.redes-sociales{
+    flex-basis: 100%;
+    font-size: 30px;
+}
+
+.container{
+    flex-basis: calc(100%/1);
+    font-size: 12px;
+    flex-wrap: wrap;
+}
+
+.icono-ubicacion{
+    display: inline;
+    height: inherit;
+}
+
+.icon-location{
+    font-size: 30px;
+}
+
+.direccion-ubicacion{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.icono-horario{
+    display: inline;
+    height: inherit;
+}
+
+.icon-time{
+    font-size: 30px;
+}
+
+.texto-horario{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.socios{
+    height: auto;
+}
+
+.icono-socio-ohaus{
+    width: 30%;
+    height: 25px;
+}
+
+.pregunta{
+    flex-basis: 100%;
+    height: 100px;
+}
+
+.pregunta-span{
+    flex-basis: calc(100%/1.8);
+    font-size: 20px;
+}
+
+.Copyright{
+    height: 50px;
+    flex-basis: 100%;
+    font-size:  15px;
+}
+
+.titulo-footer{
+    font-size:  20px;
+    flex-basis: 100%;
+}
 }
 
 
 @media screen and (min-width:481px){
+/*responsive del nav*/
 .logo .imgnav{
     width: 8em;
     height: 5em;
@@ -668,10 +718,105 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
     width: 60%;
     transition: width 0.1s linear;
 }
+
+/*responsive del footer*/
+.col-3{
+    flex-basis: calc(100%/3);
+}
+
+footer{
+    flex-basis: 100%;
+}
+
+.container{
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 2px 3px #ffff;
+}
+    
+.icono-ubicacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+    
+.icono-horario{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+    
+.horario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+        
+.informacion-horario{
+    display: inline;
+}
+    
+.socios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-sociales{
+    flex-basis: 100%;
+    font-size: 30px;
+}
+
+.container{
+    flex-basis: calc(100%/1);
+    font-size: 12px;
+    flex-wrap: wrap;
+    height: 130px;
+    align-items: center;
+}
+
+.icon-location{
+    font-size: 35px;
+}
+
+.icon-time{
+    font-size: 35px;
+}
+
+.icono-socio-ohaus{
+    width: 30%;
+    height: 25px;
+}
+
+.pregunta{
+    flex-basis: 100%;
+    height: 130px;
+}
+
+.pregunta-span{
+    flex-basis: calc(100%/2.7);
+    font-size: 20px;
+}
+
+.Copyright{
+    height: 50px;
+    flex-basis: 100%;
+    font-size:  15px;
+}
+
+.titulo-footer{
+    font-size:  20px;
+    flex-basis: 100%;
+}
 }
 
 
 @media screen and (min-width:768px){
+/*responsive del nav*/
 .logo .imgnav{
     width: 8.5em;
     height: 5em;
@@ -716,9 +861,63 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
     width: 60%;
     transition: width 0.1s linear;
 }
+
+/*responsive del footer*/
+.col-3{
+    flex-basis: calc(100%/3);
+}
+
+footer{
+    flex-basis: 100%;
+}
+
+.redes-sociales{
+    flex-basis: 100%;
+    font-size: 30px;
+}
+
+.container{
+    flex-basis: 100%;
+    font-size: 12px;
+}
+
+.icon-location{
+    font-size: 35px;
+}
+
+.icon-time{
+    font-size: 35px;
+}
+
+.icono-socio-ohaus{
+    width: 40%;
+    height: 35px;
+}
+
+.pregunta{
+    flex-basis: 100%;
+    height: 130px;
+}
+
+.pregunta-span{
+    flex-basis: calc(100%/3.4);
+    font-size: 25px;
+}
+
+.Copyright{
+    height: 50px;
+    flex-basis: 100%;
+    font-size:  15px;
+}
+
+.titulo-footer{
+    font-size:  20px;
+    flex-basis: 100%;
+}
 }
 
 @media screen and (min-width:1025px){
+/*responsive del nav*/
 .logo .imgnav{
     width: 6em;
     height: 2.9em;
@@ -778,5 +977,71 @@ header nav ul.hidden .btn_hamburger div:nth-child(1){
 header nav ul.hidden .btn_hamburger div:nth-child(3){
     width: 60%;
     transition: width 0.1s linear;
+}
+
+/*responsive del footer*/
+.col-3{
+    flex-basis: calc(100%/3);
+}
+
+footer{
+    flex-basis: 100%;
+}
+
+.redes-sociales{
+    flex-basis: 100%;
+    font-size: 40px;
+}
+
+.container{
+    flex-basis: 100%;
+}
+
+.icon-location{
+    font-size: 40px;
+}
+
+.informacion-ubicacion{
+    display: inline;
+    font-size: 13px;
+}
+
+.icon-time{
+    font-size: 40px;
+}
+
+.informacion-horario{
+    display: inline;
+    font-size: 13px;
+}
+
+.icono-socio-ohaus{
+    width: 50%;
+    height: 45px;
+}
+
+.icono-ohaus{
+    font-size: 13px;
+}
+
+.pregunta{
+    flex-basis: 100%;
+    height: 140px;
+}
+
+.pregunta-span{
+    flex-basis: calc(100%/3.5);
+    font-size: 30px;
+}
+
+.Copyright{
+    height: 50px;
+    flex-basis: 100%;
+    font-size:  15px;
+}
+
+.titulo-footer{
+    font-size:  25px;
+    flex-basis: 100%;
 }
 }
