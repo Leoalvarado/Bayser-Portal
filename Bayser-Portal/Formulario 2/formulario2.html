@@ -46,69 +46,59 @@
                 </ul> 
         </nav>
 
+        <section>
+        
+            <div class="informacion">
+        
+                <form class="form" action="plantilla.html" method="POST" id="fcot" novalidate>
+                    <div class="form-header">
+                        <h1 class="form-title">E<span>ncuest</span>a</h1>
+                    </div>
+        
+                    <!-- Nombre del Cliente -->
+                    <label class="form-label" for="clientename">Nombre Completo:</label>
+                    <input class="form-input" type="text" name="clientename" id="clientename" maxlength="35" minlength="5"
+                        placeholder="Maria Lopez" required />
+                    <span class="errorClass hidden" id="errornom"></span>
+        
+                    <!-- Correo del cliente -->
+                    <label class="form-label" for="clientecorreo">Correo Electrónico:</label>
+                    <input class="form-input" type="email" name="clientecorreo" id="clientecorreo" maxlength="30" minlength="12"
+                        placeholder="abcd@gmail.com" autocapitalize="none" required>
+                    <span class="errorClass hidden" id="errorcorre"></span>
+        
+                    <label for="seleccionproducto" class="form-subtitle">Encuesta de Satisfaccion:</label>
+        
+        
+        
+                    <div id="satisfaccion">
+                        <label class="form-label" for="">¿Como clasificaría la pagina de Bayser Honduras?</label>
+        
+                        <label class="form-label"><input class="form-input" type="radio" id="satisfaccion" name="satisfaccion" value="1"
+                                checked>Excelente</label>
+                        <label class="form-label"><input class="form-input" type="radio" id="satisfaccion" name="satisfaccion"
+                                value="2">Satisfactorio</label>
+                        <label class="form-label"><input class="form-input" type="radio" id="satisfaccion" name="satisfaccion"
+                                value="3">Bueno</label>
+                        <label class="form-label"><input class="form-input" type="radio" id="satisfaccion" name="satisfaccion"
+                                value="4">Regular</label>
+                        <label class="form-label"><input class="form-input" type="radio" id="satisfaccion" name="satisfaccion" value="5">Necesita
+                            Mejorar</label>
+        
+                    </div>
+        
+                    <label class="form-label" for="detallec">Comentarios</label>
+                    <textarea class="form-textarea" name="detallec" id="detallec" cols="80" rows="10"></textarea>
+        
+                    <input type="submit" class="btn-submit" value="Enviar">
+        
+                </form>
+            </div>
+        </section>
         
     </header>
 
     
-
-
-
-
-    <section>
-
-        <div class="informacion">
-
-        <form action="plantilla.html" method="POST" id="fcot" novalidate>
-            <h2> Cotización</h2>
-            <fieldset>
-                <legend>Cotización</legend>
-
-                <label for="clientename">Nombre Completo:</label>
-                <input type="text" name="clientename" id="clientename" maxlength="35" minlength="5" placeholder="Maria Lopez" required/>
-                <span class="errorClass hidden" id="errornom"></span>    
-            </br>
-                <label for="clientecorreo">Correo Electrónico:</label>
-                <input type="email" name="clientecorreo" id="clientecorreo" maxlength="30" minlength="12" placeholder="abcd@gmail.com" autocapitalize="none" required> 
-                <span class="errorClass hidden" id="errorcorre"></span>    
-            </br>
-                    <fieldset>
-                            <legend>Encuesta de satisfacción</legend>
-                        <div id="satisfaccion">
-                            <label for="">¿Como clasificaría la pagina de Bayser Honduras?</label>
-                        </br>
-                        </br>
-
-                            <label ><input type="radio" id="satisfaccion" name="satisfaccion" value="1" checked>Excelente</label>
-                            <label ><input type="radio" id="satisfaccion" name="satisfaccion" value="2">Satisfactorio</label>
-                            <label ><input type="radio" id="satisfaccion" name="satisfaccion" value="3">Bueno</label>
-                            <label ><input type="radio" id="satisfaccion" name="satisfaccion" value="4">Regular</label>
-                            <label ><input type="radio" id="satisfaccion" name="satisfaccion" value="5">Necesita Mejorar</label>
-    
-                        </div>
-    
-                    </br>
-                    </br>
-                    <label for="detallec">Comentarios</label>
-                        <textarea name="detallec" id="detallec" cols="80" rows="10"></textarea>
-
-
-
-
-
-
-
-
-                    </fieldset>
-
-            </fieldset>
-            <button type="submit">ENVIAR</button>
-
-        </form>
-
-
-        </div>
-
-    </section>
 
     <section id='body'></section>
     <footer>          

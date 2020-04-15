@@ -22,7 +22,6 @@ header{
     background-position: center;
     background-repeat: no-repeat; */
 
-    
     width: 100%;
     height: 1000px;
     background-image: url(img/form_fondo.jpg);
@@ -161,19 +160,7 @@ ul li ul li {
 
 /* Formulario Validaciones */
 
-  input.error {
-    outline-style: solid;
-    outline-color: maroon;
-  }
-
-input.error {
-    outline-style: solid;
-    outline-color: #2196f3;
-  }
-  .errorClass{
-    font-weight: 200;
-    color:#2196f3;
-  }
+ 
 
 
 /* Formulario */
