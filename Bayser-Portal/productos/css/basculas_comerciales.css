@@ -875,6 +875,7 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
     padding: 0px 4px;
 }
 
+/*responsive del footer*/
 .col-3{
     display: block;
     text-align: center;
@@ -1192,6 +1193,7 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
     line-height: 1;
 }
 
+/*responsive del footer*/
 .col-3{
     flex-basis: calc(100%/3);
 }
@@ -1518,6 +1520,7 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
     line-height: 1.5;
 }
 
+/*responsive del footer*/
 .col-3{
     flex-basis: calc(100%/3);
 }
@@ -1830,6 +1833,7 @@ header nav ul li{
     line-height: 1.5;
 }
 
+/*responsive del footer*/
 .col-3{
     flex-basis: calc(100%/3);
 }
