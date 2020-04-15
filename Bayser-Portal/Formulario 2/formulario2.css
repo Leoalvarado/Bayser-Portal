@@ -2,6 +2,8 @@
     box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+    /*! flex-basis: calc(100%/2.5); */
+    /*! display: flex; */
 }
 
 body{
@@ -190,11 +192,11 @@ input.error {
 }
 
 .informacion .form .form-label{
-    display: block;
+    display: flex;
     color: #276ff5;
     font-size: 16px;
     font-family: Roboto;
-    position: relative;
+    /*position: relative;*/
 }
 
 .informacion .form .form-input, .form-textarea{
@@ -666,6 +668,29 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
 
 
 @media screen and (min-width:1025px){
+.satisfaccion{
+    display: inline-flex;
+    flex-direction: row;
+    /*flex-basis: 100%;*/
+    width: 100%;
+    background: rgba(0,0,0,.5);
+}    
+.col-12{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: calc(100%/1);
+    justify-content: center;
+    /*! width: ; */
+    border: none;
+}
+
+
+.rdb{
+    display: flex;
+    justify-content: center;
+}
+
 .logo .imgnav{
     width: 6em;
     height: 2.9em;
