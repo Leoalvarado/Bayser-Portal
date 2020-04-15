@@ -4,7 +4,6 @@
 	padding: 0;
 }
 
-
 body{
     margin: 0;
     padding:  0;
@@ -12,7 +11,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     padding: 0%;
 }
-
     
 header{
     background-color:transparent;
@@ -25,14 +23,14 @@ header{
 nav{
     width: 100%;
     background-color: rgba(20, 19, 19, 0.68);
-     margin-top: -30px;
-     text-align: center;
-     position: fixed;
-     margin: -px;
-     margin-bottom: 20px;
-     height: auto;
-     padding:  0;
-     z-index: 10;   
+    margin-top: -30px;
+    text-align: center;
+    position: fixed;
+    margin: -px;
+    margin-bottom: 20px;
+    height: auto;
+    padding:  0;
+    z-index: 10;   
 }
 
 header nav ul{
@@ -60,7 +58,7 @@ header nav ul li a{
     font-family: 'Baloo Thambi 2', cursive;
     position: relative;
     background: darkgreen(#2196f3,15);
-    text-transform: uppercase;
+    text-transform: initial;
 }
 
 header nav ul li a::before{
@@ -83,23 +81,20 @@ header nav ul li a:hover::before{
 }
 
 ul li ul li {
-
     float: left;
-    }
-    
-    
-    
-    ul li ul{
-        display: none;
-        position: relative;
-        width: 200px;
-        padding: 10px 15px;
-    
-    }
-    li:hover>ul{
-        display: block;
-    
-    }
+}
+        
+ul li ul{
+    display: none;
+    position: relative;
+    width: 200px;
+    padding: 10px 15px;
+}
+
+li:hover>ul{
+    display: block;
+}
+
 #body{
 	width: 100%;
 	height: 0px;
@@ -113,15 +108,14 @@ ul li ul li {
     left: 10px; 
 }
 
-    .logo .imgnav{
-           
-           float: left;
-            left: 10px;
-            width:100px;
-            height: 100%;
-            top: 3px;
-            margin-bottom: 5px;
-    } 
+.logo .imgnav{           
+    float: left;
+    left: 10px;
+    width:100px;
+    height: 100%;
+    top: 3px;
+    margin-bottom: 5px;
+} 
 
 header .btn_hamburger{
     display: none;
@@ -138,23 +132,22 @@ header .btn_hamburger{
 
 header .btn_hamburger div{
     width: 90%;
-    height: 7px;
-    border-radius: 3px;
+    height: 5px;
+    border-radius: 5px;
     background-color: white;
 }
 /*SLIDER*/
 
-
 .contenedor{
 	width: 100%;
     position: relative;
-    height:  450px;
-
-	
+    height:  450px;	
 }
+
 .contenedor .slider-contenedor  ol{
 	list-style: none;
 }
+
 ul,ol{
 	list-style: none;
 }
@@ -172,8 +165,7 @@ ul,ol{
 .slider-contenedor li img{
 	position: relative;
 	width: 100%;
-	height: 450px;
-	
+	height: 450px;	
 	left: 0;
 	top: 0;
 }
@@ -184,7 +176,6 @@ ul,ol{
 	height: 50%;
 	width: 40%;
 	top:430px ;
-	
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -204,7 +195,6 @@ ul,ol{
 	text-align: center;
 	color: #fff;
 	z-index: 1;
-
 }
 
 .slider-contenedor section h1{
@@ -213,17 +203,15 @@ ul,ol{
 }
 
 .slider-contenedor section p{
-   position: absolute;	
+    position: absolute;	
 	font-size: 15px;
 	text-align: justify;
-	
 }
 
 .pagination{
 	position: absolute;
 	top: 90%;
 	width: 100%;
-
 	display: flex;
 	justify-content: center;
 }
@@ -231,7 +219,7 @@ ul,ol{
 .pagination li{
 	font-size: 20px;
 	margin: 2px 5px;
-     color: gray;
+    color: gray;
 	cursor: pointer;
 }
 
@@ -239,10 +227,8 @@ ul,ol{
 	position: absolute;
 	top: 0;
 	height: 100%;
-
 	display: flex;
 	align-items: center;
-
 	color: #333333;
 	font-size: 35px;
 	cursor: pointer;
@@ -257,14 +243,7 @@ ul,ol{
 	right: 10px;
 }
 
-
-
-
-
 /*CUERPO*/
-
-
-
 
 .informacion{
     width: 100%;
@@ -273,7 +252,6 @@ ul,ol{
 }
 
 .informacion h1{
-
     text-align: center;
     font-family: 'Baloo Thambi 2', cursive;
     font-weight: lighter;
@@ -281,6 +259,7 @@ ul,ol{
     color: #333333;
     text-transform: uppercase;
 }
+
 .informacion h1::before{
     content: "";
     display: block;
@@ -299,8 +278,8 @@ ul,ol{
     border: none;
     border-left: 3px solid #2196f3;
 }
- .imagenventa{
 
+ .imagenventa{
     position: relative;
     width: 400px;
     height: 360px;
@@ -312,8 +291,7 @@ ul,ol{
     box-shadow: rgba(50, 51, 50, 0.537) 0px 3px 3px 3px;
  }
 
- .imagenventa .pick
- {
+ .imagenventa .pick{
     position: relative;
     background-repeat: no-repeat;
     background-position: center;
@@ -323,25 +301,18 @@ ul,ol{
 }
 
 .informacion .lineapinta{
-
-box-sizing: border-box;
-box-shadow: rgba(50, 51, 50, 0.537) 5px 0px 3px;
-border-radius: 2.5px;
-position: relative;
-background-color: #2196f3;
-width: 7px;
-height: 347px;
-top: -317px;
-left: 481px;
-
-
-
-
+    box-sizing: border-box;
+    box-shadow: rgba(50, 51, 50, 0.537) 5px 0px 3px;
+    border-radius: 2.5px;
+    position: relative;
+    background-color: #2196f3;
+    width: 7px;
+    height: 347px;
+    top: -317px;
+    left: 481px;
 }
 
- .informacion .parrafo1{
-
-    
+.informacion .parrafo1{
     color:black;
     font-family: 'Calibri', Georgia, Times, serif;
     font-size: 26px;
@@ -356,14 +327,11 @@ left: 481px;
     box-sizing: border-box;
  }
 
- .parrafo1 p{
-
+.parrafo1 p{
     text-align: justify;
  }
 /*
  .informacion .parrafo2{
-
-    
     color:black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 26px;
@@ -376,18 +344,13 @@ left: 481px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
  }
  .parrafo2 p{
-
     text-align: justify;
  }
-
-
 */
 
 /*FOOTER*/
-/*455961-30383f*/
 footer {
     position: relative;
     align-self: flex-end;
@@ -402,7 +365,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-  }
+}
 
 .redes-sociales{
     width: 100%;
@@ -423,7 +386,7 @@ footer {
 }
 
 .enlace-mail:hover>.span-email{
-   width: 233px;
+    width: 233px;
     transition: .3s;
     list-style: none;
     text-decoration: none;
@@ -444,9 +407,7 @@ footer {
 
 .icon-email{
     position: relative;
- }
-
-
+}
 
 .enlace-facebook{
     display: flex;
@@ -460,16 +421,16 @@ footer {
 
 .enlace-facebook:hover>.span-facebook{
     width: 180px;
-     transition: .3s;
-     list-style: none;
-     text-decoration: none;
-     color: white;
-     display: flex;
-     align-items: center;
-     position: relative;
- }
+    transition: .3s;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
 
- .span-facebook{
+.span-facebook{
     font-size: 20px;
     width: 180px; 
     display: none;
@@ -622,7 +583,6 @@ footer {
     justify-content: center;
 }
 
-/*2196f3 - 00ff00*/
 .pregunta-span{
     background: #2196f3;
     transition: 1s;
@@ -651,8 +611,8 @@ footer {
     color: white;
     font-size:  25px;
     top: 5px;
-   justify-content: center;
-   width: 100%;
+    justify-content: center;
+    width: 100%;
 }
     
 .mensaje2{
@@ -670,175 +630,208 @@ footer  hr{
 }
 /*RESPONSIVE*/
 @media screen and (min-width:320px){
-    header nav ul li a{
-        width: 100vw;
-    }
-    .logo{
-        left: 35.5vw;
-    }
+.logo .imgnav{
+    width: 6em;
+    height: 3em;
+}
 
-    header .btn_hamburger{
-        display: flex;
-    }
+header nav ul li a{
+   width: 100vw;
+   font-size: 1em;
+}
 
-    header nav ul{
-        overflow: hidden;
-        width: 100vw;
-        transition: max-height 1s ease-in;    
-    }
+.logo{
+    left: 35.5vw;
+}
+
+header .btn_hamburger{
+    display: flex;
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    top: 40px;
+    right: 15px;
+}
+
+header nav ul{
+    overflow: hidden;
+    width: 100vw;
+    transition: max-height 1s ease-in;    
+}
     
-    header nav ul.hidden{
-        max-height: 0vh;
-        transition: max-height 1s ease-in;
-    }   
+header nav ul.hidden{
+    max-height: 0vh;
+    transition: max-height 1s ease-in;
+}   
 
-    header nav ul.hidden .btn_hamburger div:nth-child(1){
-        width: 60%;
-        transition: width 0.1s linear;
-    }
+header nav ul.hidden .btn_hamburger div:nth-child(1){
+    width: 60%;
+    transition: width 0.1s linear;
+}
 
-    header nav ul.hidden .btn_hamburger div:nth-child(3){
-        width: 60%;
-        transition: width 0.1s linear;
-    }
+header nav ul.hidden .btn_hamburger div:nth-child(3){
+    width: 60%;
+    transition: width 0.1s linear;
+}
 }
 
 
 @media screen and (min-width:481px){
-    header nav ul li a{
-        width: 100vw;
-    }
+.logo .imgnav{
+    width: 8em;
+    height: 5em;
+}
 
-    .logo{
-        left: 41vw;
-    }
+header nav ul li a{
+    width: 100vw;
+    font-size: 1.1em;
+}
 
-    header .btn_hamburger{
-        display: flex;
-    }
+.logo{
+    left: 38vw;
+}
 
-    header nav ul{
-        overflow: hidden;
-        width: 100vw;
-        transition: max-height 1s ease-in;    
-    }
+header .btn_hamburger{
+    display: flex;
+    width: 3em;
+    height: 3em;
+    position: absolute;
+    top: 50px;
+    right: 15px;
+}
+
+header nav ul{
+    overflow: hidden;
+    width: 100vw;
+    transition: max-height 1s ease-in;    
+}
     
-    header nav ul.hidden{
-        max-height: 0vh;
-        transition: max-height 1s ease-in;
-    }   
+header nav ul.hidden{
+    max-height: 0vh;
+    transition: max-height 1s ease-in;
+}   
 
-    header nav ul.hidden .btn_hamburger div:nth-child(1){
-        width: 60%;
-        transition: width 0.1s linear;
-    }
+header nav ul.hidden .btn_hamburger div:nth-child(1){
+    width: 60%;
+    transition: width 0.1s linear;
+}
 
-    header nav ul.hidden .btn_hamburger div:nth-child(3){
-        width: 60%;
-        transition: width 0.1s linear;
-    }
+header nav ul.hidden .btn_hamburger div:nth-child(3){
+    width: 60%;
+    transition: width 0.1s linear;
+}
 }
 
 
 @media screen and (min-width:768px){
-    header nav ul li a{
-        width: 100vw;
-    }
-        .logo{
-            left: 43.5vw;
-        }
+.logo .imgnav{
+    width: 8.5em;
+    height: 5em;
+}
+
+header nav ul li a{
+    width: 100vw;
+    font-size: 1.1em;
+}
+
+.logo{
+    left: 43.5vw;
+}
     
-        header .btn_hamburger{
-            display: flex;
-            transition: width 0.5s ease-in;
-        }
+header .btn_hamburger{
+    display: flex;
+    transition: width 0.5s ease-in;
+    width: 3em;
+    height: 3em;
+    position: absolute;
+    top: 50px;
+    right: 18px;
+}
     
-        header nav ul{
-            overflow: hidden;
-            width: 100vw;
-            transition: max-height 1s ease-in;    
-        }
+header nav ul{
+    overflow: hidden;
+    width: 100vw;
+    transition: max-height 1s ease-in;    
+}
    
-        header nav ul.hidden{
-            max-height: 0vh;
-            transition: max-height 1s ease-in;
-        }   
+header nav ul.hidden{
+    max-height: 0vh;
+    transition: max-height 1s ease-in;
+}   
     
-        header nav ul.hidden .btn_hamburger div:nth-child(1){
-            width: 60%;
-            transition: width 0.1s linear;
-        }
+header nav ul.hidden .btn_hamburger div:nth-child(1){
+    width: 60%;
+    transition: width 0.1s linear;
+}
     
-        header nav ul.hidden .btn_hamburger div:nth-child(3){
-            width: 60%;
-            transition: width 0.1s linear;
-        }
-    
-        
-    }
+header nav ul.hidden .btn_hamburger div:nth-child(3){
+    width: 60%;
+    transition: width 0.1s linear;
+}        
+}
 
 
 
 
 @media screen and (min-width:1025px){
-    .col-3{
-        flex-basis: calc(100%/3);
-    }
+.logo .imgnav{
+    width: 6em;
+    height: 2.9em;
+}
 
-    /*nav*/
+.col-3{
+    flex-basis: calc(100%/3);
+}
+
+/*nav*/
         
-    header nav ul li a{
-        width: 100%;
-    }
+header nav ul li a{
+    width: 100%;
+    font-size: 18px;
+}
 
-    header .btn_hamburger{
-        display: none;
-        overflow: hidden;
-    }
-        .logo{
-            left: 10px;
-        }
-    
-        header nav ul{
-            overflow: visible;
-            width: 100vw;
-            transition: max-height 1s ease-in;    
-        }
-        ul li ul li {
-            float: left;
-            }
-            
-            
-            
-            ul li ul{
-                display: none;
-                position: relative;
-                width: 200px;
-                padding: 10px 15px;
-            
-            }
-            li:hover>ul{
-                display: block;
-            
-            }
-        header nav ul.hidden{
-            max-height: 100vh;
-            transition: max-height 1s ease-in;
-        }   
-    
-        header nav ul.hidden .btn_hamburger div:nth-child(1){
-            width: 60%;
-            transition: width 0.1s linear;
-        }
-    
-        header nav ul.hidden .btn_hamburger div:nth-child(3){
-            width: 60%;
-            transition: width 0.1s linear;
-        }
-    
-    
-    
+header .btn_hamburger{
+    display: none;
+    overflow: hidden;
+}
 
+.logo{
+    left: 10px;
+}
+    
+header nav ul{
+    overflow: visible;
+    width: 100vw;
+    transition: max-height 1s ease-in;    
+}
 
+ul li ul li {
+    float: left;
+}
+                        
+ul li ul{
+    display: none;
+    position: relative;
+    width: 200px;
+    padding: 10px 15px;        
+}
 
+li:hover>ul{
+    display: block;        
+}
+
+header nav ul.hidden{
+    max-height: 100vh;
+    transition: max-height 1s ease-in;
+}   
+    
+header nav ul.hidden .btn_hamburger div:nth-child(1){
+    width: 60%;
+    transition: width 0.1s linear;
+}
+    
+header nav ul.hidden .btn_hamburger div:nth-child(3){
+    width: 60%;
+    transition: width 0.1s linear;
+}
 }
