@@ -504,6 +504,35 @@ footer  hr{
 /*RESPONSIVE*/
 @media screen and (min-width:320px){
 /*responsivo del nav*/
+.container_1 .box{
+    
+    flex-basis: calc(100%/(1));
+    height: 350px;
+    padding: 40px;
+    top: 10px;
+    left: 0PX;
+
+}
+
+.container_1 .box .icon{
+width: 60px;
+height: 60px;
+font-size: 30px;
+/* font-weight: 700;
+transition: 1s;*/
+}
+.container_1 .box .content h3{
+font-size: 20px;
+}
+
+.container_1 .box .content p{
+font-size: 15px;
+}
+
+/*somos*/
+
+
+
 .logo .imgnav{
     width: 6em;
     height: 3em;
@@ -637,7 +666,33 @@ footer{
 
 
 @media screen and (min-width:481px){
-/*responsive del nav*/
+/*Responsive quienes*/
+    .container_1 .box{   
+   flex-basis: calc(100%/(1.2));
+   height: 420px;
+   padding: 40px;
+   top: 10px;
+   left: 20px;
+    
+    }
+ 
+.container_1 .box .icon{
+    width: 70px;
+    height: 70px;
+    font-size: 35px;
+}
+.container_1 .box .content h3{
+    font-size: 25px;
+  }
+
+  .container_1 .box .content p{
+    font-size: 20px;
+}
+    /*somos*/
+        
+
+
+    /*responsive del nav*/
 .logo .imgnav{
     width: 8em;
     height: 5em;
@@ -779,6 +834,38 @@ footer{
 
 
 @media screen and (min-width:768px){
+  /*Responsive quienes*/
+    .container_1 .box{   
+        flex-basis: calc(100%/(1.5));
+        height: 450px;
+        padding: 40px;
+        top: 15px;
+        left: 108px;
+    
+    }
+ 
+.container_1 .box .icon{
+    
+    width: 70px;
+    height: 70px;
+    font-size: 35px;
+   /* font-weight: 700;
+    transition: 1s;*/
+}
+.container_1 .box .content h3{
+    position: relative;
+    font-size: 35px;
+  }
+
+  .container_1 .box .content p{
+    position: relative;
+    font-size: 25px;
+}
+
+
+    /*somos*/
+ 
+   
 /*responsive del nav*/
 .logo .imgnav{
     width: 8.5em;
@@ -880,7 +967,34 @@ footer{
 }
 
 @media screen and (min-width:1025px){
-/*responsive del nav*/
+/*Responsive quienes*/
+.container_1 .box{
+    flex-basis: calc((100%)/3.5);
+    padding: 40px;
+    height: 440px;
+    left: 0px;
+}
+
+.container_1 .box .icon{
+    flex-basis: 80px;
+    width:90px ;
+    height: 90px;
+    font-size: 45px;
+}
+
+
+  .container_1 .box .content p{
+    font-size: 17px;
+}
+
+.container_1 .box .content h3{
+    font-size: 20px;
+  }
+/*somos*/
+
+
+
+    /*responsive del nav*/
 .logo .imgnav{
     width: 6em;
     height: 2.9em;
