@@ -481,6 +481,7 @@ footer  hr{
     position: relative;
     top: -20px;
 }
+
 /*RESPONSIVE*/
 @media screen and (min-width:320px){
 .logo .imgnav{
