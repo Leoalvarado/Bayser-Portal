@@ -25,14 +25,14 @@ header{
 nav{
     width: 100%;
     background-color: rgba(20, 19, 19, 0.68);
-     margin-top: -30px;
-     text-align: center;
-     position: fixed;
-     margin: -px;
-     margin-bottom: 20px;
-     height: auto;
-     padding:  0;
-     z-index: 10;   
+    margin-top: -30px;
+    text-align: center;
+    position: fixed;
+    margin: -px;
+    margin-bottom: 20px;
+    height: auto;
+    padding:  0;
+    z-index: 10;   
 }
 
 header nav ul{
@@ -60,7 +60,7 @@ header nav ul li a{
     font-family: 'Baloo Thambi 2', cursive;
     position: relative;
     background: darkgreen(#2196f3,15);
-    text-transform: uppercase;
+    text-transform: initial;
 }
 
 header nav ul li a::before{
@@ -83,23 +83,20 @@ header nav ul li a:hover::before{
 }
 
 ul li ul li {
-
     float: left;
-    }
-    
-    
-    
-    ul li ul{
-        display: none;
-        position: relative;
-        width: 200px;
-        padding: 10px 15px;
-    
-    }
-    li:hover>ul{
-        display: block;
-    
-    }
+}
+        
+ul li ul{
+    display: none;
+    position: relative;
+    width: 200px;
+    padding: 10px 15px;
+}
+
+li:hover>ul{
+    display: block;
+}
+
 #body{
 	width: 100%;
 	height: 0px;
@@ -113,15 +110,14 @@ ul li ul li {
     left: 10px; 
 }
 
-    .logo .imgnav{
-           
-           float: left;
-            left: 10px;
-            width:100px;
-            height: 100%;
-            top: 3px;
-            margin-bottom: 5px;
-    } 
+.logo .imgnav{           
+    float: left;
+    left: 10px;
+    width:100px;
+    height: 100%;
+    top: 3px;
+    margin-bottom: 5px;
+} 
 
 header .btn_hamburger{
     display: none;
@@ -138,8 +134,8 @@ header .btn_hamburger{
 
 header .btn_hamburger div{
     width: 90%;
-    height: 7px;
-    border-radius: 3px;
+    height: 5px;
+    border-radius: 5px;
     background-color: white;
 }
 
@@ -356,7 +352,8 @@ ul,ol{
     transition: .2s ease;
     opacity: 0;
 }
- .btn1:hover::before,.btn2:hover::before,.btn3:hover::before{
+
+.btn1:hover::before,.btn2:hover::before,.btn3:hover::before{
     transform: translate(-50%,-50%) scale(3);
     opacity: 0;
 }
@@ -440,7 +437,6 @@ footer {
     display: inline;
 }
 
-
 .icono-horario{
     display: flex;
     width: 100%;
@@ -454,7 +450,6 @@ footer {
     justify-content: center;
     align-items: center;
 }
-
 
 .informacion-horario{
     display: inline;
@@ -505,7 +500,7 @@ footer {
 
 .icon-email{
     position: relative;
- }
+}
 
 .enlace-facebook{
     display: flex;
@@ -519,16 +514,16 @@ footer {
 
 .enlace-facebook:hover>.span-facebook{
     width: 180px;
-     transition: .3s;
-     list-style: none;
-     text-decoration: none;
-     color: white;
-     display: flex;
-     align-items: center;
-     position: relative;
- }
+    transition: .3s;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
 
- .span-facebook{
+.span-facebook{
     font-size: 20px;
     width: 180px; 
     display: none;
@@ -637,7 +632,6 @@ footer {
     justify-content: center;
 }
 
-
 footer  hr{
     position: relative;
     top: -20px;
@@ -645,6 +639,51 @@ footer  hr{
 
 /*----------------------------------------------media query---------------------------------------*/
 @media screen and (min-width:320px){
+/*responsive del nav*/
+.logo .imgnav{
+    width: 6em;
+    height: 3em;
+}
+    
+header nav ul li a{
+    width: 100vw;
+    font-size: 1em;
+}
+    
+.logo{
+    left: 35.5vw;
+}
+    
+header .btn_hamburger{
+    display: flex;
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    top: 40px;
+    right: 15px;
+}
+    
+header nav ul{
+    overflow: hidden;
+    width: 100vw;
+    transition: max-height 1s ease-in;    
+}
+        
+header nav ul.hidden{
+    max-height: 0vh;
+    transition: max-height 1s ease-in;
+}   
+    
+header nav ul.hidden .btn_hamburger div:nth-child(1){
+    width: 60%;
+    transition: width 0.1s linear;
+}
+    
+header nav ul.hidden .btn_hamburger div:nth-child(3){
+    width: 60%;
+    transition: width 0.1s linear;
+}
+
 /*Responsive del slider*/ 
 .contenedor{
     flex-basis: 100%;
@@ -795,11 +834,6 @@ footer  hr{
 }
      
 /*Responsive del slider*/   
-    
-header nav ul li{
-    display: none;
-}
-
 .matriz-basculas{
     display: flex;
     flex-direction: row;
@@ -925,16 +959,31 @@ footer{
     font-size:  20px;
     flex-basis: 100%;
 }
-/*NAV*/
+}
+
+@media screen and (min-width:481px){
+/*responsive del nav*/
+.logo .imgnav{
+    width: 8em;
+    height: 5em;
+}
+
 header nav ul li a{
     width: 100vw;
+    font-size: 1.1em;
 }
+
 .logo{
-    left: 35.5vw;
+    left: 38vw;
 }
 
 header .btn_hamburger{
     display: flex;
+    width: 3em;
+    height: 3em;
+    position: absolute;
+    top: 50px;
+    right: 15px;
 }
 
 header nav ul{
@@ -942,7 +991,7 @@ header nav ul{
     width: 100vw;
     transition: max-height 1s ease-in;    
 }
-
+    
 header nav ul.hidden{
     max-height: 0vh;
     transition: max-height 1s ease-in;
@@ -958,9 +1007,6 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
     transition: width 0.1s linear;
 }
 
-}
-
-@media screen and (min-width:481px){
 /*Responsive del slider*/ 
 .contenedor{
     flex-basis: 100%;
@@ -991,7 +1037,6 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
     padding: 15px 50px;
     display: flex;
 }
-
 
 .pagination{
     top: 630px;
@@ -1111,10 +1156,6 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
     opacity: 0;
 }
 /*Responsive del slider*/      
-header nav ul li{
-    display: none;
-}
-
 .matriz-basculas{
     display: flex;
     flex-direction: row;
@@ -1128,9 +1169,7 @@ header nav ul li{
     height: 320px;
     margin: 5px;
     color: black;
-    /* border: 1px solid red;*/
     flex-basis: calc(100%/1.1);
-    /*  background: pink;*/
     transition: .5s;
 }
 
@@ -1138,12 +1177,9 @@ header nav ul li{
     height: 350px;
     margin: 5px;
     color: white;
-    /* border: 1px solid red;*/
-    /* flex-basis: calc(100%/3);*/
     background: black;
     flex-grow: .3;
 }
-
 
 .imagen-bascula{
     height: 100%;
@@ -1162,7 +1198,6 @@ header nav ul li{
 
 footer{
     flex-basis: 100%;
-    /*  font-size: 30px;*/
 }
 
 .container{
@@ -1172,15 +1207,12 @@ footer{
     box-shadow: 0px 2px 3px #ffff;
 }
     
-    
 .icono-ubicacion{
     display: flex;
-    /*  width: 100%;*/
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
-    
     
 .icono-horario{
     display: flex;
@@ -1252,42 +1284,55 @@ footer{
     font-size:  20px;
     flex-basis: 100%;
 }
+}
+
+@media screen and (min-width:768px){   
+/*responsive del nav*/
+.logo .imgnav{
+    width: 8.5em;
+    height: 5em;
+}
 
 header nav ul li a{
     width: 100vw;
+    font-size: 1.1em;
 }
 
 .logo{
-    left: 41vw;
+    left: 43.5vw;
 }
-
+    
 header .btn_hamburger{
     display: flex;
+    transition: width 0.5s ease-in;
+    width: 3em;
+    height: 3em;
+    position: absolute;
+    top: 50px;
+    right: 18px;
 }
-
+    
 header nav ul{
     overflow: hidden;
     width: 100vw;
     transition: max-height 1s ease-in;    
 }
-
+   
 header nav ul.hidden{
     max-height: 0vh;
     transition: max-height 1s ease-in;
 }   
-
+    
 header nav ul.hidden .btn_hamburger div:nth-child(1){
     width: 60%;
     transition: width 0.1s linear;
 }
-
+    
 header nav ul.hidden .btn_hamburger div:nth-child(3){
     width: 60%;
     transition: width 0.1s linear;
 }
-}
 
-@media screen and (min-width:768px){   
 /*Responsive del slider*/ 
 .contenedor{
     flex-basis: 100%;
@@ -1328,7 +1373,7 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
 .pagination li{
     font-size:  15px;
     margin: 2px 5px;
- }
+}
 
 .left, .right{
     top: -10px;
@@ -1437,10 +1482,6 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
     opacity: 0;
 }
 /*Responsive del slider*/     
-header nav ul li{
-    display: none;
-}
-
 .matriz-basculas{
     display: flex;
     flex-direction: row;
@@ -1483,7 +1524,6 @@ header nav ul li{
 
 footer{
     flex-basis: 100%;
-    /*  font-size: 30px;*/
 }
 
 .redes-sociales{
@@ -1529,43 +1569,68 @@ footer{
     font-size:  20px;
     flex-basis: 100%;
 }
-/*NAV*/
-header nav ul li a{
-    width: 100vw;
-}
-    .logo{
-        left: 43.5vw;
-    }
-
-    header .btn_hamburger{
-        display: flex;
-        transition: width 0.5s ease-in;
-    }
-
-    header nav ul{
-        overflow: hidden;
-        width: 100vw;
-        transition: max-height 1s ease-in;    
-    }
-
-    header nav ul.hidden{
-        max-height: 0vh;
-        transition: max-height 1s ease-in;
-    }   
-
-    header nav ul.hidden .btn_hamburger div:nth-child(1){
-        width: 60%;
-        transition: width 0.1s linear;
-    }
-
-    header nav ul.hidden .btn_hamburger div:nth-child(3){
-        width: 60%;
-        transition: width 0.1s linear;
-    }
-
 }
 
 @media screen and (min-width:1025px){
+/*responsive del nav*/
+.logo .imgnav{
+    width: 6em;
+    height: 2.9em;
+}
+
+.col-3{
+    flex-basis: calc(100%/3);
+}
+        
+header nav ul li a{
+    width: 100%;
+    font-size: 18px;
+}
+
+header .btn_hamburger{
+    display: none;
+    overflow: hidden;
+}
+
+.logo{
+    left: 10px;
+}
+    
+header nav ul{
+    overflow: visible;
+    width: 100vw;
+    transition: max-height 1s ease-in;    
+}
+
+ul li ul li {
+    float: left;
+}
+                        
+ul li ul{
+    display: none;
+    position: relative;
+    width: 200px;
+    padding: 10px 15px;        
+}
+
+li:hover>ul{
+    display: block;        
+}
+
+header nav ul.hidden{
+    max-height: 100vh;
+    transition: max-height 1s ease-in;
+}   
+    
+header nav ul.hidden .btn_hamburger div:nth-child(1){
+    width: 60%;
+    transition: width 0.1s linear;
+}
+    
+header nav ul.hidden .btn_hamburger div:nth-child(3){
+    width: 60%;
+    transition: width 0.1s linear;
+}
 /*Responsive del slider*/ 
 .contenedor{
     flex-basis: 100%;
@@ -1771,7 +1836,6 @@ header nav ul li{
 
 footer{
     flex-basis: 100%;
-    /*font-size: 50px;*/
 }
 
 .redes-sociales{
@@ -1781,7 +1845,6 @@ footer{
 
 .container{
     flex-basis: 100%;
-    /* font-size: 30px;*/
 }
 
 .icon-location{
@@ -1818,7 +1881,6 @@ footer{
 
 .pregunta-span{
     flex-basis: calc(100%/3.5);
-    /*width: 400px;*/
     font-size: 30px;
 }
 
@@ -1832,55 +1894,4 @@ footer{
     font-size:  25px;
     flex-basis: 100%;
 }
-
-/*NAV*/
-header nav ul li a{
-    width: 100%;
-}
-
-header .btn_hamburger{
-    display: none;
-    overflow: hidden;
-}
-    .logo{
-        left: 10px;
-    }
-
-    header nav ul{
-        overflow: visible;
-        width: 100vw;
-        transition: max-height 1s ease-in;    
-    }
-    ul li ul li {
-        float: left;
-        }
-        
-        
-        
-        ul li ul{
-            display: none;
-            position: relative;
-            width: 200px;
-            padding: 10px 15px;
-        
-        }
-        li:hover>ul{
-            display: block;
-        
-        }
-    header nav ul.hidden{
-        max-height: 100vh;
-        transition: max-height 1s ease-in;
-    }   
-
-    header nav ul.hidden .btn_hamburger div:nth-child(1){
-        width: 60%;
-        transition: width 0.1s linear;
-    }
-
-    header nav ul.hidden .btn_hamburger div:nth-child(3){
-        width: 60%;
-        transition: width 0.1s linear;
-    }
-
 }
