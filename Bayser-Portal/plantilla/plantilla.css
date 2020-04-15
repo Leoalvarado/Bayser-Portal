@@ -254,25 +254,72 @@ ul,ol{
 
 
 
-/*455961-30383f*/
+/*-----------------------------------------------footer--------------------------------------------------*/
 footer {
     position: relative;
     align-self: flex-end;
     background-color: #333333;
     color: #fff;
-    font-size: 50px;
     font-weight: bold;
     text-align: center;
     padding: 0;
-    width: 100%;
     text-transform: uppercase;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-  }
+}
+
+.container{
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 2px 3px #ffff;
+}
+
+.ubicacion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100px;
+}
+
+.icono-ubicacion{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.informacion-ubicacion{
+    display: inline;
+}
+
+.icono-horario{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.horario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacion-horario{
+    display: inline;
+}
+
+.socios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .redes-sociales{
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -311,9 +358,7 @@ footer {
 
 .icon-email{
     position: relative;
- }
-
-
+}
 
 .enlace-facebook{
     display: flex;
@@ -327,16 +372,16 @@ footer {
 
 .enlace-facebook:hover>.span-facebook{
     width: 180px;
-     transition: .3s;
-     list-style: none;
-     text-decoration: none;
-     color: white;
-     display: flex;
-     align-items: center;
-     position: relative;
- }
+    transition: .3s;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
 
- .span-facebook{
+.span-facebook{
     font-size: 20px;
     width: 180px; 
     display: none;
@@ -417,118 +462,32 @@ footer {
     position: relative;
 }
 
-.container{
-    font-size: 15px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    box-shadow: 0px 2px 3px #ffff;
-}
-
-.ubicacion{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 100px;
-}
-
-.icono-ubicacion{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.informacion-ubicacion{
-    display: inline;
-}
-
-.icon-location{
-    font-size: 40px;
-}
-
-.icono-horario{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.horario{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.icon-time{
-    font-size: 40px;
-}
-
-.informacion-horario{
-    display: inline;
-}
-
-.socios{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.icono-socio-ohaus{
-    width: 50%;
-    height: 50px;
-}
-
 .pregunta{
-    width: 100%;
-    height: 130px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/*2196f3 - 00ff00*/
 .pregunta-span{
     background: #2196f3;
-    transition: 1s;
     transform: rotate(-10deg);
-    width: 400px;
-    font-size: 40px;
-    border-radius: 3%;
-    box-shadow: 0px 5px 3px #333333;
 }
 
-.mensaje{
+.Copyright{
     display: flex;
-    height: 50px;
-    width: 100%;
     position: relative;
     color: white;
-    font-size:  15px;
     align-self: flex-end;
     background: #000000;
     align-items: center;
     justify-content: center;
 }
 
-.mensaje1{
+.titulo-footer{
     position: relative;
     color: white;
-    font-size:  25px;
     top: 5px;
-   justify-content: center;
-   width: 100%;
-}
-    
-.mensaje2{
-    position: relative;
-    color: rgb(247, 249, 255);
-    font-size:  30px;
-    top: 15px;
-    left: center;
-    font-weight: bold;
+    justify-content: center;
 }
 
 footer  hr{
