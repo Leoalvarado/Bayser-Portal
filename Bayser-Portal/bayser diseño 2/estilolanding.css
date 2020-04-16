@@ -362,12 +362,12 @@ rect{
 
 /* Contenedor 2 */
 .contenedor_2{
-    position: absolute;
+    /* position: absolute; */
     margin: auto;
     width: 100%;
-    top: 100px;
-    left: 500px;
-    height: 15px;
+    /* height: 150px; */
+    /* top: 100px;
+    left: 400px; 
     /* background-image: url(img/LogoGrande.png); */
 
     /* text-transform: uppercase;
@@ -381,9 +381,12 @@ rect{
     background-color: rgba(20, 19, 19, 0.68);
     position: relative;
     text-align: center;
-    width: 98%;
-    height: 440px;
+    width: 500px; 
+    
+    height: 300px;
     margin: 10px;
+    left: 400px;
+    top: 90px; 
 }
 
 .caja_columna_2 .texto_2{
@@ -428,11 +431,14 @@ rect{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 1285px;
-    height: 15%;
+    /* position: absolute;
+    width: 1585px; */
+    /* left: 400px;
+    width: 1585px;
+    height: 15%; */
 }
 
-@keyframes animate{
+/* @keyframes animate{
     0%{
         stroke-dashoffset: 800;
 
@@ -496,7 +502,7 @@ rect{
         width: 31%;
         height: 430px;
     }
-}
+} */
 
 /* .lemacaja{
     position: absolute;
