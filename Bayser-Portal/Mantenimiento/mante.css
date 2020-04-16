@@ -246,8 +246,6 @@ ul,ol{
 /*CUERPO*/
 
 .informacion{
-    width: 100%;
-    height: 600px;
     background-color: rgba(255, 255, 255, 0.653);
 }
 
@@ -279,49 +277,34 @@ ul,ol{
     border-left: 3px solid #2196f3;
 }
 
- .imagenventa{
+.imagenventa{
     position: relative;
-    width: 400px;
-    height: 360px;
-    left: 25px;
-    top: 35px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     box-shadow: rgba(50, 51, 50, 0.537) 0px 3px 3px 3px;
- }
+}
 
- .imagenventa .pick{
+.imagenventa .pick{
     position: relative;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 400px;
-    height: 360px;
 }
 
 .informacion .lineapinta{
     box-sizing: border-box;
     box-shadow: rgba(50, 51, 50, 0.537) 5px 0px 3px;
     border-radius: 2.5px;
-    position: relative;
+   /* position: relative;*/
     background-color: #2196f3;
-    width: 7px;
-    height: 347px;
-    top: -317px;
-    left: 481px;
 }
 
-.informacion .parrafo1{
+.informacion .parrafo1{    
     color:black;
-    font-family: 'Calibri', Georgia, Times, serif;
-    font-size: 26px;
+    font-family:'Calibri', Georgia, Times, serif;;
     font-weight: lighter;
-    position: relative;
-    width: 700px;
-    height: auto;
-    left: 600px;
-    top: -632px;
+ /*   position: relative;*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -637,6 +620,80 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
     transition: width 0.1s linear;
 }
 
+/*responsive parrafo instalaciones*/
+.informacion{
+    /* background: red;*/
+    /* border: 1px solid green;*/
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+     height: 600px;
+ }
+ 
+ h1{
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     flex-basis: calc(100%/3);
+     height: auto;
+   /*  background: red;*/
+ }
+ 
+ .imagenventa{
+     /*flex-basis: 70%;*/
+     height: 200px;
+ }
+ 
+ .imagenventa .pick{
+     width: 100%;
+     height: 200px;
+ }
+ 
+ .lineapinta{
+     height: 7px;
+     width: 80%;
+     margin-left: 10px;
+     margin-right: 10px;
+   /*  background: green;*/
+     align-items: center;
+ }
+ 
+ .contenido{
+     align-items: center; 
+     height: auto;
+ }
+ 
+ .col-m-2{
+     display: flex;
+     width: 75%;
+    /* border:1px solid red;
+     background: blue;*/
+     margin-right: 5%;
+     margin-left: 5%;
+     margin-top: 9%;
+     margin-bottom: 9%;
+ }
+ 
+ .col-m-4{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: row;
+     flex-wrap: wrap;
+     background: white;
+   /*  border: 1px solid pink;*/
+ }
+ 
+ .parrafo{
+     padding: 10px;
+     width: 80%;
+    /* background: blue;*/
+     height: 150px;
+     font-family:'Calibri', Georgia, Times, serif;;
+     font-size: 1.2em;
+     font-weight: lighter;
+ }
 /*responsive del footer*/
 .col-3{
     display: block;
@@ -769,6 +826,81 @@ header nav ul.hidden .btn_hamburger div:nth-child(1){
 header nav ul.hidden .btn_hamburger div:nth-child(3){
     width: 60%;
     transition: width 0.1s linear;
+}
+
+/*responsive parrafo instalaciones*/
+.informacion{
+    /*background: red;
+    border: 1px solid green;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+}
+
+.informacion h1{
+    display: flex;
+    width: 100%;
+    flex-basis: calc(100%/3);
+    height: 600px;
+  /*  background: red;*/
+}
+
+.imagenventa{
+    width: 300px;
+    height: 250px;
+}
+
+.imagenventa .pick{
+    width: 100%;
+    height: 250px;
+}
+
+.lineapinta{
+    height: 80%;
+    width: 7px;
+    margin-left: 10px;
+    margin-right: 10px;
+  /*  background: green;*/
+    align-items: center;
+}
+
+.contenido{
+    display: flex;
+    align-items: center; 
+    height: 100%;
+}
+
+.col-m-2{
+    display: flex;
+    width: 90%;
+  /*  border:1px solid red;
+    background: blue;*/
+    margin-left: 4%;
+    margin-top: 9%;
+    margin-bottom: 9%;
+}
+
+.col-m-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: calc(100%/.9);
+    background: white;
+  /*  border: 1px solid pink;*/
+}
+
+.parrafo{
+    padding: 10px;
+    width: 100%;
+   /* background: blue;*/
+    height: 290px;
+    font-family:'Calibri', Georgia, Times, serif;;
+    font-size: 1.1em;
+    font-weight: lighter;
 }
 
 /*responsive del footer*/
@@ -914,6 +1046,80 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
     transition: width 0.1s linear;
 }        
 
+/*responsive parrafo instalaciones*/
+.informacion{
+    /* background: red;
+     border: 1px solid green;*/
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     width: 100%;
+     height: 550px;
+ }
+ 
+ .informacion h1{
+     display: flex;
+     width: 100%;
+     flex-basis: calc(100%/3);
+     height: 600px;
+     /*background: red;*/
+ }
+ 
+ .imagenventa{
+     width: 300px;
+     height: 300px;
+ }
+ 
+ .imagenventa .pick{
+     width: 100%;
+     height: 300px;
+ }
+ 
+ .lineapinta{
+     height: 80%;
+     width: 7px;
+     margin-left: 10px;
+     margin-right: 10px;
+  /*   background: green;*/
+     align-items: center;
+ }
+ 
+ .contenido{
+     align-items: center; 
+     height: inherit;
+ }
+ 
+ .col-m-2{
+     display: flex;
+     width: 100%;
+   /*  border:1px solid red;
+     background: blue;*/
+     margin-left: 5%;
+     margin-top: 9%;
+     margin-bottom: 9%;
+ }
+ 
+ .col-m-4{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: row;
+     flex-wrap: wrap;
+     flex-basis: calc(100%/1);
+     background: white;
+  /*   border: 1px solid pink;*/
+ }
+ 
+ .parrafo{
+     padding: 10px;
+     width: 90%;
+   /*  background: blue;*/
+     height: 330px;
+     font-family:'Calibri', Georgia, Times, serif;;
+     font-size: 1.4em;
+     font-weight: lighter;
+ }
+
 /*responsive del footer*/
 .col-3{
     flex-basis: calc(100%/3);
@@ -1029,6 +1235,79 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
     transition: width 0.1s linear;
 }
 
+/*responsive parrafo instalaciones*/
+.informacion{
+    /*   background: red;
+       border: 1px solid green;*/
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       width: 100%;
+       height: 600px;
+   }
+   
+   .informacion h1{
+       display: flex;
+       width: 100%;
+       flex-basis: calc(100%/3);
+       height: 600px;
+     /*  background: red;*/
+   }
+   
+   .imagenventa{
+       width: 400px;
+       height: 360px;
+   }
+   
+   .imagenventa .pick{
+       flex-basis: 100%;
+       height: 360px;
+   }
+   
+   .lineapinta{
+       height: 80%;
+       width: 7px;
+       margin-left: 10px;
+       margin-right: 10px;
+      /* background: green;*/
+       align-items: center;
+   }
+   
+   .contenido{
+       align-items: center; 
+       height: inherit;
+   }
+   
+   .col-m-2{
+       display: flex;
+       width: 95%;
+      /* border:1px solid red;
+       background: blue;*/
+       margin: 30px;
+       margin-top: 9%;
+       margin-bottom: 9%;
+   }
+   
+   .col-m-4{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: row;
+       flex-wrap: wrap;
+       flex-basis: calc(100%/1);
+       background: white;
+      /* border: 1px solid pink;*/
+   }
+   
+   .parrafo{
+       padding: 10px;
+       width: 70%;
+     /*  background: blue;*/
+       height: 400px;
+       font-family:'Calibri', Georgia, Times, serif;;
+       font-size: 26px;
+       font-weight: lighter;
+   }
 /*responsive del footer*/
 .col-3{
     flex-basis: calc(100%/3);
