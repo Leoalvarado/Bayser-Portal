@@ -101,13 +101,6 @@ a:hover span:nth-child(4){
     transition-delay: 0.75s;
 }
 
-header{
-    background-image: url(img/form_fondo.jpg);
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
 nav{
     width: 100%;
@@ -832,6 +825,15 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
     transition: width 0.1s linear;
 }
 
+/*responsive del body*/
+header{
+    background-image: url(img/form_fondo.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /*responsive del footer*/
 .col-3{
     display: block;
@@ -963,6 +965,14 @@ header nav ul.hidden .btn_hamburger div:nth-child(1){
 header nav ul.hidden .btn_hamburger div:nth-child(3){
     width: 60%;
     transition: width 0.1s linear;
+}
+
+header{
+    background-image: url(img/form_fondo.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /*responsive del footer*/
@@ -1106,7 +1116,14 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
     width: 60%;
     transition: width 0.1s linear;
 }
-
+/*responsive del body*/
+header{
+    background-image: url(img/form_fondo.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 /*responsive del footer*/
 .col-3{
     flex-basis: calc(100%/3);
@@ -1169,6 +1186,15 @@ footer{
 
 .col-3{
     flex-basis: calc(100%/3);
+}
+
+
+header{
+    background-image: url(img/fondo_1025.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /*nav*/        
