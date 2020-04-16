@@ -884,7 +884,7 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
     height:  60%;	
     margin-left: 10px;
     margin-right: 10px;
-    top: 23px;
+    top: 24px;
     left: -10px;
 }
 
@@ -930,7 +930,7 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
 /*responsive parrafo instalaciones*/
 h1{
     position: relative;
-    top: 20px;
+    top: 22px;
 }
 
 .informacion{
@@ -1157,7 +1157,7 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
     height:  60%;	
     margin-left: 10px;
     margin-right: 10px;
-    top: 10px;
+    top: 24px;
     left: -10px;
 }
 
@@ -1204,7 +1204,7 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
 /*responsive parrafo instalaciones*/
 
 h1{
-    top: 15px;
+    top: 20px;
 }
 
 .informacion{
