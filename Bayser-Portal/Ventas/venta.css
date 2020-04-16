@@ -884,7 +884,7 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
     height:  60%;	
     margin-left: 10px;
     margin-right: 10px;
-    top: 25px;
+    top: 20px;
     left: -10px;
 }
 
@@ -930,7 +930,7 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
 /*responsive parrafo instalaciones*/
 h1{
     position: relative;
-    top: 10px;
+    top: 15px;
 }
 
 .informacion{
