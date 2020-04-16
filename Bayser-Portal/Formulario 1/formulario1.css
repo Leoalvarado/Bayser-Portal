@@ -162,6 +162,9 @@ header .btn_hamburger div{
     background-attachment: fixed;
 } */
 
+.contenido{
+    padding-top:  100px;
+}
 .informacion .form .form-header .form-title{
     font-weight: normal;
     font-family: sans-serif;
