@@ -299,6 +299,7 @@ header .btn_hamburger div{
     position: relative;
 }
 
+
 /*-----------------------------------------------footer--------------------------------------------------*/
 footer {
     position: relative;
@@ -917,9 +918,9 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
 
 /*responsive del formulario*/
 .informacion .form{
-    display: block;
+    /*display: block;*/
   /* position: relative;*/
-     top: 100px;
+     /*top: 50%;*/
      right: 330px;
      background: rgba(0,0,0,.6);
      width: 100%;
