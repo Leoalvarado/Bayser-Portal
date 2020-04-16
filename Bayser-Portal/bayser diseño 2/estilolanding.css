@@ -360,6 +360,12 @@ rect{
     }
 }
 
+/* Prueba sin contenedor */
+.imagenlogo{
+    position: absolute;
+    left: 820px;
+    top: 320px;
+}
 /* Contenedor 2 */
 .contenedor_2{
     /* position: absolute; */
