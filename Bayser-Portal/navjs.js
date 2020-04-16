@@ -6,7 +6,6 @@ function page_init(e){
     btn_hamburger = document.getElementsByClassName("btn_hamburger")[0];
     ul = document.querySelector("header nav ul");
     btn_hamburger.addEventListener("click",btn_hamburger_onclic);
-    console.log('ya entro')
 }
 
 function btn_hamburger_onclic(e){

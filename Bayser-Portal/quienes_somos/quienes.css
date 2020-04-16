@@ -605,7 +605,7 @@ footer{
 
 .icono-ubicacion{
     display: inline;
-    height: inherit;
+    /* height: inherit; */
 }
 
 .icon-location{
@@ -620,7 +620,7 @@ footer{
 
 .icono-horario{
     display: inline;
-    height: inherit;
+    /* height: inherit; */
 }
 
 .icon-time{
