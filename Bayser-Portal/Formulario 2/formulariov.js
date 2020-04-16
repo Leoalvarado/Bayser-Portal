@@ -124,6 +124,7 @@ if(tieneerror){
 }
 else{
     this.submit();
+    alert("Gracias por su observación, fue enviada exitosamente.");
     return true;
 }
 
