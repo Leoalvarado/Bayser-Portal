@@ -615,6 +615,58 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
     transition: width 0.1s linear;
 }
 
+
+/*Responsive del slider*/
+ /*SLIDER*/
+
+ .contenedor{
+	flex-basis: calc((100%)/1);
+    height:  60%;	
+    margin-left: 10px;
+    margin-right: 10px;
+    top: -5px;
+    left: -10px;
+}
+
+
+.slider-contenedor li ul{
+	flex-basis: calc((100%)/1);
+	height: 60%;
+}
+
+.slider-contenedor li img{
+	flex-basis: calc((100%)/1);
+	height: 60%;	
+	left: 0;
+	top: 0;
+}
+
+.pagination{
+	top: 85%;
+	width: 100%;
+}
+
+.pagination li{
+	font-size: 15px;
+	margin: 2px 5px;
+}
+
+.left, .right{
+	top: 0;
+	height: 100%;
+	font-size: 20px;
+}
+
+.left{
+	left: 10px;
+}
+
+.right{
+	right: 10px;
+}
+
+/*fin del Responsive del slider*/
+
 /*responsive parrafo instalaciones*/
 .informacion{
    /* background: red;*/
@@ -823,7 +875,66 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
     transition: width 0.1s linear;
 }
 
+/*Responsive del slider*/
+ /*SLIDER*/
+
+ .contenedor{
+	flex-basis: calc((100%)/1);
+    height:  60%;	
+    margin-left: 10px;
+    margin-right: 10px;
+    top: 10px;
+    left: -10px;
+}
+
+
+.slider-contenedor li ul{
+	flex-basis: calc((100%)/1);
+	height: 60%;
+}
+
+.slider-contenedor li img{
+	flex-basis: calc((100%)/1);
+	height: 60%;	
+	left: 0;
+	top: 0;
+}
+
+.pagination{
+	top: 88%;
+	width: 100%;
+}
+
+.pagination li{
+	font-size: 18px;
+	margin: 2px 5px;
+}
+
+.left, .right{
+	top: 0;
+	height: 100%;
+	font-size: 25px;
+}
+
+.left{
+	left: 10px;
+}
+
+.right{
+	right: 10px;
+}
+
+/*fin del Responsive del slider*/
+
+
+
 /*responsive parrafo instalaciones*/
+h1{
+    position: relative;
+    top: 10px;
+}
+
+
 .informacion{
     /*background: red;
     border: 1px solid green;*/
@@ -1039,6 +1150,58 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
     transition: width 0.1s linear;
 }
 
+/*Responsive del slider*/
+ /*SLIDER*/
+
+ .contenedor{
+	flex-basis: calc((100%)/1);
+    height:  60%;	
+    margin-left: 10px;
+    margin-right: 10px;
+    top: 10px;
+    left: -10px;
+}
+
+
+.slider-contenedor li ul{
+	flex-basis: calc((100%)/1);
+	height: 60%;
+}
+
+.slider-contenedor li img{
+	flex-basis: calc((100%)/1);
+	height: 60%;	
+	left: 0;
+	top: 0;
+}
+
+.pagination{
+	top: 88%;
+	width: 100%;
+}
+
+.pagination li{
+	font-size: 25px;
+	margin: 2px 5px;
+}
+
+.left, .right{
+	top: 0;
+	height: 100%;
+	font-size: 30px;
+}
+
+.left{
+	left: 10px;
+}
+
+.right{
+	right: 10px;
+}
+
+/*fin del Responsive del slider*/
+
+
 /*responsive parrafo instalaciones*/
 .informacion{
    /* background: red;
@@ -1048,6 +1211,9 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
     align-items: center;
     width: 100%;
     height: 550px;
+}
+h1{
+    top: 15px;
 }
 
 .informacion h1{
@@ -1231,6 +1397,60 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
     width: 60%;
     transition: width 0.1s linear;
 }
+
+/*Responsive del slider*/
+ /*SLIDER*/
+
+ .contenedor{
+	flex-basis: calc((100%)/1);
+    height:  450px;
+    margin-left: 10px;
+    margin-right: 10px;
+    top: 0;
+    left: -10px;
+}
+
+
+.slider-contenedor li ul{
+	flex-basis: calc((100%)/1);
+    height: 450px;
+}
+
+.slider-contenedor li img{
+	flex-basis: calc((100%)/1);
+	height: 450px;	
+	left: 0;
+	top: 0;
+}
+
+.pagination{
+	top: 88%;
+	width: 100%;
+}
+
+.pagination li{
+	font-size: 35px;
+	margin: 2px 5px;
+}
+
+.left, .right{
+	top: 0;
+	height: 100%;
+	font-size: 40px;
+}
+
+.left{
+	left: 10px;
+}
+
+.right{
+	right: 10px;
+}
+
+/*fin del Responsive del slider*/
+
+
+
 /*responsive parrafo instalaciones*/
 .informacion{
  /*   background: red;
@@ -1276,7 +1496,7 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
 
 .col-m-2{
     display: flex;
-    width: 70%;
+    width: 95%;
    /* border:1px solid red;
     background: blue;*/
     margin: 30px;
