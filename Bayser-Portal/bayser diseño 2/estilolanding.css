@@ -206,6 +206,24 @@ li:hover>ul{
     margin-bottom: 5px;
 } 
 
+
+/*Imagen Logo grande*/
+.imagenlogo{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-shadow: rgba(50, 51, 50, 0.537) 0px 3px 3px 3px;
+}
+
+.imagenlogo .pick{
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
 /* Frase */
 .contenedor{
     position: absolute;
