@@ -377,7 +377,7 @@ rect{
 .caja_columna_2{
     color: #fff;
     /* background: transparent; */
-    background-image: url(img/LogoGrande.png);
+    background-image: url(img/LogoPequeño.png);
     background-color: rgba(20, 19, 19, 0.68);
     position: relative;
     text-align: center;
