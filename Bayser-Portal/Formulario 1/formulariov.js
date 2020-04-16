@@ -124,6 +124,7 @@ if(tieneerror){
 }
 else{
     this.submit();
+    alert("Su Cotización fue Enviada Exitosamente");
     return true;
 }
 
