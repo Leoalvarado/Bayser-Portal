@@ -589,6 +589,59 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
     width: 60%;
         transition: width 0.1s linear;
     }
+
+/*responsive del formulario*/
+.informacion .form{
+    /* position: relative;*/
+    margin-top: 100px;
+     bottom: 0px;
+     right: 330px;
+     background: rgba(0,0,0,.6);
+     width: 100%;
+     max-width: 650px;
+     margin: auto;
+     padding: 5px 15px;
+     /* margin-top: 30px; */
+     padding-bottom: 30px;
+     border-radius: 3px;    
+ }
+ 
+ .informacion .form .form-uni{
+     display: block;
+     color: #fff;
+     font-size: 16px;
+     font-family: Roboto;
+    position: absolute;
+     top: -52px;
+     left: 400px;
+     /*margin-right: 50px;*/
+     margin: -28px;
+     padding: 0;
+     width: 10px;
+     
+     /* width: 50%;
+     padding: 10px;
+     margin-bottom: 20px;
+     border-radius: 2px;
+     font-size: 14px;
+     color: #FFF;
+     font-family: Roboto;    */
+ 
+ }
+
+ .informacion .form .form_select{
+    background: rgba(0,0,0,.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #276ff5;
+    width: 55%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #FFF;
+    font-family: Roboto;   
+}
 /*responsive del footer*/
 .col-3{
     display: block;
