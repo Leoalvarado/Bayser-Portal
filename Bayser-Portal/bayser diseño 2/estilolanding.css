@@ -212,8 +212,10 @@ li:hover>ul{
     position: relative;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    box-shadow: rgba(50, 51, 50, 0.537) 0px 3px 3px 3px;
+    left: 800px;
+    width: 500px;
+    top: -50px;
+
 }
 
 .imagenlogo .pick{
