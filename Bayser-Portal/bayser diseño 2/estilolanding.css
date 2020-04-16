@@ -360,6 +360,144 @@ rect{
     }
 }
 
+/* Contenedor 2 */
+.contenedor_2{
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    top: 100px;
+    left: 500px;
+    height: 15px;
+    /* background-image: url(img/LogoGrande.png); */
+
+    /* text-transform: uppercase;
+    letter-spacing: 4px; */
+}
+
+.caja_columna_2{
+    color: #fff;
+    /* background: transparent; */
+    background-image: url(img/LogoGrande.png);
+    background-color: rgba(20, 19, 19, 0.68);
+    position: relative;
+    text-align: center;
+    width: 98%;
+    height: 440px;
+    margin: 10px;
+}
+
+.caja_columna_2 .texto_2{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 2px solid #2196f3;
+    padding: 30px;
+}
+
+/* .caja_columna_2 .texto_2 h2{
+    font-size: 40px;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #2196f3;
+}
+
+.caja_columna_2 .texto_2 p{
+    font-size: 18px;
+    text-transform: uppercase;
+} */
+
+svg,rect{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+}
+
+rect{
+    stroke: #2196f3;
+    stroke-width: 4;
+    stroke-dasharray: 400;
+    animation: animate 4s linear infinite;
+}
+
+.caja_2 .contenedor_2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1285px;
+    height: 15%;
+}
+
+@keyframes animate{
+    0%{
+        stroke-dashoffset: 800;
+
+    }
+
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+
+@media(min-width: 400px){
+    .caja_columna_2{
+        width:82%;
+        height: 400px;
+    }
+}
+
+@media(min-width: 520px){
+    .caja_columna_2{
+        width:85%;
+        height: 320px;
+    }
+}
+
+@media(min-width: 600px){
+    .caja_columna_2{
+        width:82%;
+        height: 270px;
+    }
+}
+
+@media(min-width: 680px){
+    .caja_columna_2{
+        width:46%;
+        height: 460px;
+    }
+}
+
+@media(min-width: 780px){
+    .caja_columna_2{
+        width:47%;
+        height: 350px;
+    }
+}
+
+@media(min-width: 1024px){
+    .contenedor_2{
+        width:1024px;
+    }
+    .caja_columna_2{
+        width: 31%;
+        height: 480px;
+    }
+}
+
+@media(min-width: 1200px){
+    .contenedor_2{
+        width:1200px;
+    }
+    .caja_columna_2{
+        width: 31%;
+        height: 430px;
+    }
+}
+
 /* .lemacaja{
     position: absolute;
     left: 40px;
