@@ -1387,8 +1387,8 @@ header nav ul.hidden .btn_hamburger div:nth-child(3){
 .btn1, .btn2, .btn3{    
     padding: 2rem 5.3rem;
     width: 10%;
-    left: -302px;
-    top: 315px;
+    left: 10px;
+    top: -100px;
 }
 
 .btn1::before {
